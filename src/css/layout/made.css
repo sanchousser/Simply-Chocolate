@@ -54,6 +54,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--animation);
+}
+
+.made__video:hover {
+    outline: 2px solid var(--hoverColor);
 }
 
 .made__button {
@@ -74,6 +79,12 @@
     display: flex;
     width: 516px;
     height: 400px;
+    transition: var(--animation);
+}
+
+.made__div:hover {
+    outline: 2px solid var(--hoverColor);
+    background-color: var(--hoverbgColor);
 }
 
 .made__subtitle {
