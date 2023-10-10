@@ -1,0 +1,56 @@
+.header__section {
+    padding-top: 28px;
+    margin-bottom: 25px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+    margin-right: 4px;
+}
+
+.logo__content {
+    display: flex;
+    align-items: center;
+}
+
+.simply__logo {
+    font-style: italic;
+    margin-right: 4px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav__list__item {
+    font-weight: 500;
+    line-height: 16px
+}
+
+.nav__list__link {}
+
+.nav__icons__list {
+    display: flex;
+    align-items: center;
+}
+
+.nav__icons__item {}
+
+.icon__list__link {}
+
+.nav__list__icon {}
+
+.nav__list__item:hover,
+.nav__list__item:focus {
+    color: #FD9222;
+}

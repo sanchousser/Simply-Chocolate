@@ -1,0 +1,28 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+/* utils */
+@import url('./utils/var.css');
+
+/* base */
+
+@import url('./base/reset.css');
+@import url('./base/container.css');
+@import url('./base/section.css');
+@import url('./base/common.css');
+
+
+/* layout */
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/made.css');
+@import url('./layout/ingredients.css');
+@import url('./layout/advantages.css');
+@import url('./layout/subscribe.css');
+@import url('./layout/footer.css');
+@import url('./layout/sellers.css');
+@import url('./layout/products.css');
+

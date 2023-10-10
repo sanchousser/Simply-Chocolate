@@ -1,0 +1,41 @@
+.advatages__section {
+    background: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.advantages__list {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+
+}
+
+.advantages__title {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+
+}
+
+.advantages__text {
+    color: rgba(255, 255, 255, 0.70);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: -0.28px;
+
+}
+
+
+.advantages__list__item {
+
+}

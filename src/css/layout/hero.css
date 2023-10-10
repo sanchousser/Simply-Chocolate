@@ -1,0 +1,98 @@
+.hero__section {
+    position: relative;
+    height: 52w;
+    width: 95vw;
+    max-width: 1900px;
+
+    background-image: url(../img/desktop/hero-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.hero__title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.84px;
+
+    padding-top: 500px;
+    padding-left: 40px;
+    margin-bottom: 32px;
+}
+
+.hero__list {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.buy {
+    width: 144px;
+    height: 45px;
+    display: flex;
+    margin-right: 14px;
+    padding: 14px 40px;
+    border-radius: 100px;
+    background: #FD9222;
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.how {
+    display: flex;
+    width: 183px;
+    height: 45px;
+    padding: 14px 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: inherit;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hero__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__link {
+    color: #FFF;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+    padding-right: 92px;
+}
+
+.scroll__icon {}
+
+.buy:hover {
+    background: #FCF1E0;
+    color: #FD9222;
+}
+
+.how:hover {
+    border: 1px solid #FD9222;
+    color: #FD9222;
+}
