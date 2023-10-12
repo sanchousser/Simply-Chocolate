@@ -1,52 +1,36 @@
-body {
-    background: #FAFAFA;
-}
-
-
 .products__title {
     color: #111;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
+    line-height: 120%;
+    letter-spacing: -0.6px;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .products__title__span {
     color: #FD9222;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
 }
 
 .products__swiper {
     padding-bottom: 40px;
 }
 
-.products__list {
-
-}
 
 
 
 .products__item {
     max-width: 100%;
+    padding: 32px 52px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 15px;
     background: #FFF;
-    margin: 18px;
     transition: var(--animation);
+    cursor: pointer;
 }
 
 
@@ -63,33 +47,33 @@ body {
 
 .products__item__title {
     color: #111;
-    font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 133.33%;
     letter-spacing: -0.36px;
     text-transform: uppercase;
-    margin: 0px;
+    margin-bottom: 2px;
 }
 
 .products__item__text {
     color: rgba(17, 17, 17, 0.70);
-    font-family: Montserrat;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 116.667%;
     letter-spacing: -0.24px;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .products__item__price {
+    color: #111;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
     border-radius: 100px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FAFAFA;
-    display: flex;
-    width: 94px;
     padding: 8px 20px;
     transition: var(--animation);
 }
@@ -99,6 +83,7 @@ body {
     border: 1px solid var(--mainColor);
     background-color: var(--bgColor);
     color: var(--hoverColor);
+}
 
 .swiper-pagination-bullet {
     width: 13px;
@@ -112,4 +97,23 @@ body {
     height: 13px;
     background-color: #FD9222;
     border-radius: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .products__title {
+        font-size: 24px;
+        line-height: 116.667%;
+        letter-spacing: -0.72px;
+        margin-bottom: 50px;
+    }
+
+    .products__swiper {
+        padding-bottom: 50px;
+    }
+
+    .products__item {
+        max-width: 270px;
+        padding: 32px 20px;
+    }
 }

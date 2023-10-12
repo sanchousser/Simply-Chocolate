@@ -1,7 +1,8 @@
 body {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     color: #111;
     font-size: 14px;
     letter-spacing: -0.28px;
+    background: #FAFAFA;
 }
