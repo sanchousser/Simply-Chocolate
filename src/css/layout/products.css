@@ -38,6 +38,7 @@ body {
 
 
 .products__item {
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -102,7 +103,7 @@ body {
 .swiper-pagination-bullet {
     width: 13px;
     height: 13px;
-    background-color: rgba(17, 17, 17, 0.10);
+    background-color: rgba(17, 17, 17, 0.7);
     transition: var(--animation);
 }
 
