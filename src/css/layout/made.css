@@ -47,11 +47,18 @@
     width: 600px;
     height: 400px;
     background-image: url(/img/desktop/made.jpg);
+    background-size: 600px, 400px;
+    background-repeat: no-repeat;
     border-radius: 15px;
     margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: var(--animation);
+}
+
+.made__video:hover {
+    outline: 2px solid var(--hoverColor);
 }
 
 .made__button {
@@ -72,6 +79,12 @@
     display: flex;
     width: 516px;
     height: 400px;
+    transition: var(--animation);
+}
+
+.made__div:hover {
+    outline: 2px solid var(--hoverColor);
+    background-color: var(--hoverbgColor);
 }
 
 .made__subtitle {
@@ -103,3 +116,16 @@
     margin-left: 45px;
     max-width: 409px;
 }
+
+@media screen and (min-width:480px) {
+    
+}
+
+@media (min-device-pixel-ratio: 2) and (min-width: 1140px),
+(min-resolution: 192dpi) and (min-width: 1140px),
+(min-resolution: 2dppx) and (min-width: 1140px) {
+    .made__video {
+        background-image: url('/img/desktop/made@2x.jpg');
+    }
+}
+

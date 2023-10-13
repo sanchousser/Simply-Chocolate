@@ -1,60 +1,43 @@
-.products {
-    display: flex;
-    justify-content: center;
-    background-color: #FAFAFA;
-}
-
 .products__title {
     color: #111;
     text-align: center;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
+    line-height: 120%;
+    letter-spacing: -0.6px;
     text-transform: uppercase;
-    padding-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 .products__title__span {
     color: #FD9222;
-    font-family: Montserrat;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
 }
 
-.products__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    flex-wrap: wrap;
+.products__swiper {
+    padding-bottom: 40px;
 }
+
+
+
 
 .products__item {
-    width: 270px;
-    height: 364px;
-    flex-shrink: 0;
+    max-width: 100%;
+    padding: 32px 52px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
+    border-radius: 15px;
     background: #FFF;
-    margin: 18px;
+    transition: var(--animation);
+    cursor: pointer;
 }
 
-.products__item:first-child {
-    margin-left: 33px;
-}
 
-.products__item:last-child {
-    margin-right: 33px;
+
+.products__item:hover {
+    background-color: var(--hoverbgColor);
+    border: 1px solid var(--hoverColor);
 }
 
 
@@ -64,32 +47,73 @@
 
 .products__item__title {
     color: #111;
-    font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 133.33%;
     letter-spacing: -0.36px;
     text-transform: uppercase;
-    margin: 0px;
+    margin-bottom: 2px;
 }
 
 .products__item__text {
     color: rgba(17, 17, 17, 0.70);
-    font-family: Montserrat;
     font-size: 12px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 116.667%;
     letter-spacing: -0.24px;
-    padding-bottom: 18px;
+    margin-bottom: 18px;
 }
 
 .products__item__price {
+    color: #111;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
     border-radius: 100px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FAFAFA;
-    display: flex;
-    width: 94px;
     padding: 8px 20px;
+    transition: var(--animation);
+}
+
+
+.products__item__price:hover {
+    border: 1px solid var(--mainColor);
+    background-color: var(--bgColor);
+    color: var(--hoverColor);
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.7);
+    transition: var(--animation);
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    background-color: #FD9222;
+    border-radius: 20px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .products__title {
+        font-size: 24px;
+        line-height: 116.667%;
+        letter-spacing: -0.72px;
+        margin-bottom: 50px;
+    }
+
+    .products__swiper {
+        padding-bottom: 50px;
+    }
+
+    .products__item {
+        max-width: 270px;
+        padding: 32px 20px;
+    }
 }
