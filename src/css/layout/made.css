@@ -1,16 +1,5 @@
 .made {
-    background-color: #FAFAFA;
     padding-bottom: 128px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.made-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .made__title {
@@ -62,9 +51,14 @@
 }
 
 .made__button {
+    position: relative;
+    bottom: 222px;
+    left: 278px;
+    border: none;
+    background: none;
 }
 .made__button__icon:hover {
-    fill: var(--hoverColor);
+    stroke: var(--hoverColor);
 }
 
 
@@ -86,12 +80,11 @@
 }
 
 .made__subtitle {
-    color: #111;
+    color: var(--mainColor);
     font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 133.333%;
     max-width: 370px;
     padding-top: 32px;
     padding-left: 32px;
@@ -104,11 +97,11 @@
 }
 
 .made__list__item {
-    color: #111;
+    color: var(--mainColor);
     font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 128.571%;
     letter-spacing: -0.28px;
     padding-bottom: 24px;
     margin-left: 45px;
