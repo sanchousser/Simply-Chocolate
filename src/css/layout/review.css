@@ -9,7 +9,7 @@
     line-height: 28px;
     letter-spacing: -0.72px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 91px;
 }
 
 .review__choco {
@@ -21,12 +21,15 @@
     justify-content: center;
     gap: 28px;
     margin-bottom: 31px;
+    flex-wrap: wrap;
 }
 
 .review__card {
+    position: relative;
     text-align: center;
-    width: 500px;
-    height: 230px;
+    width: 29vw;
+    max-width: 500px;
+    height: 210px;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
@@ -37,7 +40,10 @@
 }
 
 .review__image {
+    position: absolute;
     margin-bottom: 20px;
+    left: 40%;
+    bottom: 72%;
 }
 
 .review__card__name {
@@ -45,12 +51,14 @@
     font-weight: 600;
     line-height: 24px;
     margin-bottom: 25px;
+    margin-top: 55px;
 }
 
 .review__card__text {
     color: rgba(17, 17, 17, 0.70);
     font-size: 15px;
     line-height: 18px;
+    max-width: 312px;
 }
 
 .review__button {
@@ -68,4 +76,14 @@
     font-size: 18px;
     font-weight: 600;
     margin: 0 auto;
+}
+
+.review__card:hover {
+    box-shadow: 4px 4px 4px 4px rgba(123, 123, 123, 0.048);
+}
+
+.review__button:hover {
+    border-radius: 100px;
+    background: #FD9222;
+    color: #FFF;
 }
