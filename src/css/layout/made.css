@@ -46,14 +46,8 @@
 .made__video {
     width: 600px;
     height: 400px;
-    background-image: url(/img/desktop/made.jpg);
-    background-size: 600px, 400px;
-    background-repeat: no-repeat;
     border-radius: 15px;
     margin-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: var(--animation);
 }
 
@@ -61,9 +55,13 @@
     outline: 2px solid var(--hoverColor);
 }
 
+.made__img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 .made__button {
-    background: none;
-    border: none;
 }
 .made__button__icon:hover {
     fill: var(--hoverColor);
@@ -117,15 +115,5 @@
     max-width: 409px;
 }
 
-@media screen and (min-width:480px) {
-    
-}
 
-@media (min-device-pixel-ratio: 2) and (min-width: 1140px),
-(min-resolution: 192dpi) and (min-width: 1140px),
-(min-resolution: 2dppx) and (min-width: 1140px) {
-    .made__video {
-        background-image: url('/img/desktop/made@2x.jpg');
-    }
-}
 
