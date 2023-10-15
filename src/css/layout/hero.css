@@ -1,10 +1,5 @@
 .hero__section {
-    position: relative;
-    height: 52w;
-    width: 95vw;
-    max-width: 1900px;
-
-    background-image: url(../img/desktop/hero-desktop.jpg);
+    background-image: url(../img/mobile/hero-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -14,39 +9,35 @@
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    margin-bottom: 72px;
 }
 
 .hero__title {
+    width: 320px;
     color: #FFF;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
-    line-height: 34px;
-    letter-spacing: -0.84px;
+    line-height: 24px;
+    letter-spacing: -0.6px;
 
-    padding-top: 500px;
-    padding-left: 40px;
+    padding-top: 395px;
+    padding-left: 20px;
     margin-bottom: 32px;
 }
 
 .hero__list {
     display: flex;
     align-items: center;
-    padding-left: 40px;
-}
-
-.hero__content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 50px;
+    padding-left: 20px;
+    margin-bottom: 30px;
 }
 
 .buy {
-    width: 144px;
+    width: 120px;
     height: 45px;
     display: flex;
     margin-right: 14px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border-radius: 100px;
     background: #FD9222;
     color: #FFF;
@@ -58,9 +49,9 @@
 
 .how {
     display: flex;
-    width: 183px;
+    width: 159px;
     height: 45px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     align-items: center;
     justify-content: center;
     gap: 14px;
@@ -79,10 +70,12 @@
 
 .hero__link {
     color: #FFF;
-    font-size: 15px;
-    position: absolute;
-    right: 0;
-    padding-right: 92px;
+    padding-left: 20px;
+    font-size: 13px;
+}
+
+.hero__content {
+    padding-bottom: 30px;
 }
 
 .scroll__icon {}
@@ -95,4 +88,68 @@
 .how:hover {
     border: 1px solid #FD9222;
     color: #FD9222;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .hero__section {
+        background-image: url('../img/tablet/hero-tablet.jpg');
+    }
+
+    .hero__title {
+        width: 540px;
+        font-size: 28px;
+        letter-spacing: -0.84px;
+        padding-left: 40px;
+        line-height: 34px;
+    }
+
+    .buy {
+        width: 144px;
+        padding: 14px 40px;
+    }
+
+    .how {
+        width: 183px;
+        padding: 12px 28px;
+    }
+
+    .hero__content {
+        display: flex;
+        align-items: ce;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        padding-left: 22px;
+    }
+
+    .hero__link {
+        color: #FFF;
+        font-size: 15px;
+        position: absolute;
+        right: 0;
+        padding-right: 120px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+    .hero__section {
+        background-image: url('../img/desktop/hero-desktop.jpg');
+    }
+
+    .hero__title {
+        width: 550px;
+        font-size: 30px;
+        letter-spacing: -0.84px;
+        padding-left: 40px;
+        line-height: 34px;
+    }
+
+    .hero__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
