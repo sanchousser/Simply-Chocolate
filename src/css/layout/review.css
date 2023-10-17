@@ -27,9 +27,8 @@
 .review__card {
     position: relative;
     text-align: center;
-    width: 29vw;
-    max-width: 500px;
-    height: 210px;
+    width: 360px;
+    height: 200px;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
