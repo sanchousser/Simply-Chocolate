@@ -117,3 +117,21 @@
         padding: 32px 20px;
     }
 }
+
+@media screen and (min-width:1200px) {
+    .products__title {
+        font-size: 24px;
+        line-height: 116.667%;
+        letter-spacing: -0.72px;
+        margin-bottom: 50px;
+    }
+
+    .products__swiper {
+        padding-bottom: 50px;
+    }
+
+    .products__item {
+        max-width: 270px;
+        padding: 32px 20px;
+    }
+}
