@@ -1,3 +1,5 @@
+/* Mobile */
+
 .ingredients__section {
   background-color: #fafafa;
 }
@@ -43,13 +45,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .ingredients__list__item {
   padding: 28px;
   border-radius: 15px;
   border: 1px solid #fd9222;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .ingredients__section h4 {
@@ -74,4 +82,27 @@
 .black {
   background-color: black;
   color: white;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .ingredients__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .ingredients__list__item {
+    flex-basis: calc((100% - 4 * 30px) / 4);
+    padding: 28px;
+    border-radius: 15px;
+    border: 1px solid #fd9222;
+  }
 }
