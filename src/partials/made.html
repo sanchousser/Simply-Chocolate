@@ -3,8 +3,21 @@
         <h2 class="made__title">HOW IT'S <span class="made__title__span">MADE?</span></h2>
         <div class="made__wrapper">
             <div class="made__video">
+                <picture>
+                    <source srcset="/img/desktop/made.jpg 1x,/img/desktop/made@2x.jpg  2x"
+                        media="(min-width: 1200px)" type="image/jpg" />
+                    <source srcset="/img/tablet/made.jpg 1x, /img/tablet/made@2x.jpg 2x"
+                        media="(min-width: 768px)" type="image/jpg" />
+                    <source srcset="/img/mobile/made.jpg 1x, /img/mobile/made@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpg" />
+                    <img src="/img/desktop/made.jpg" class="made__img" alt="How it's made?" />
+                </picture>
                 <button class="made__button">
-                    <svg class="icon icon-MadeIcon"><use xlink:href="#icon-MadeIcon"></use></svg>
+                    <svg class="made__button__icon" xmlns="http://www.w3.org/2000/svg" width="44" height="44"
+                        viewBox="0 0 44 44" fill="none">
+                        <path d="M15 33V12L35 22.5L15 33Z" fill="#F5F4F4" />
+                        <circle cx="22" cy="22" r="21.5" stroke="white" />
+                    </svg>
                 </button>
             </div>
             <div class="made__div">

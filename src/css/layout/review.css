@@ -1,0 +1,88 @@
+.review__section {
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.review__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    text-align: center;
+    margin-bottom: 91px;
+}
+
+.review__choco {
+    color: #FD9222;
+}
+
+.review__list {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 31px;
+    flex-wrap: wrap;
+}
+
+.review__card {
+    position: relative;
+    text-align: center;
+    width: 360px;
+    height: 200px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    box-shadow: 0px 9.04932px 26.57166px 0px rgba(215, 228, 249, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review__image {
+    position: absolute;
+    margin-bottom: 20px;
+    left: 40%;
+    bottom: 72%;
+}
+
+.review__card__name {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 25px;
+    margin-top: 55px;
+}
+
+.review__card__text {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 312px;
+}
+
+.review__button {
+    display: flex;
+    width: 222px;
+    height: 50px;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 14px;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: transparent;
+
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+.review__card:hover {
+    box-shadow: 4px 4px 4px 4px rgba(123, 123, 123, 0.048);
+}
+
+.review__button:hover {
+    border-radius: 100px;
+    background: #FD9222;
+    color: #FFF;
+}
