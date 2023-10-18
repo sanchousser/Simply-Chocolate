@@ -18,8 +18,8 @@
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
+  line-height: 20px;
+  letter-spacing: -0.6px;
   text-transform: uppercase;
   margin-bottom: 28px;
   width: 411px;
@@ -38,7 +38,7 @@
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
-  width: 486px;
+  margin-bottom: 32px;
 }
 
 .ingredients__list {
@@ -104,5 +104,29 @@
     padding: 28px;
     border-radius: 15px;
     border: 1px solid #fd9222;
+  }
+
+  .ingredients__text {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    width: 486px;
+  }
+
+  .ingredients__text {
+    color: #111;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    width: 486px;
   }
 }
