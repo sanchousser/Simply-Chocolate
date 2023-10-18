@@ -27,6 +27,9 @@
 }
 
 .footer__contact {
+  display: flex;
+  flex-direction: column;
+  margin-right: 63px;
 }
 
 .contact__us {
@@ -55,10 +58,15 @@
 
 .footer__social__icon {
 }
+
 .footer__social__icon__image {
+  width: 24px;
+  height: 24px;
+  fill: white;
 }
 
 .footer hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer__menu {
