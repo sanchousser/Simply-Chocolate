@@ -6,3 +6,7 @@ body {
     letter-spacing: -0.28px;
     background: #FAFAFA;
 }
+
+*:hover {
+    transition: var(--animation);
+}
