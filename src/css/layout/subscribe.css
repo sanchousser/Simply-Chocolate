@@ -1,11 +1,7 @@
-/* Tablet */
-
-/* Desktop */
-
 .subscribe__section {
   padding-top: 72px;
   padding-bottom: 72px;
-  background-image: url('/img/desktop/subcribe.jpg');
+  background-image: url('/img/mobile/subcribe.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -24,13 +20,13 @@
   color: #fff;
   text-align: center;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 28px;
-  letter-spacing: -0.72px;
+  line-height: 24px;
+  letter-spacing: -0.6px;
   text-transform: uppercase;
-  width: 378px;
+  width: 291px;
   margin-bottom: 24px;
 }
 
@@ -43,7 +39,7 @@
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
-  width: 467px;
+  width: 326px;
   margin-bottom: 24px;
 }
 
@@ -60,4 +56,39 @@
   letter-spacing: -0.28px;
   padding: 14px 40px;
   border: none;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .subscribe__section {
+    background-image: url('/img/tablet/subcribe.jpg');
+  }
+
+  .subscribe__title {
+    font-size: 24px;
+    width: 378px;
+  }
+
+  .subscribe__text {
+    width: 467px;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1200px) {
+  .subscribe__section {
+    background-image: url('/img/desktop/subcribe.jpg');
+  }
+
+  .subscribe__title {
+    line-height: 28px;
+    letter-spacing: -0.72px;
+    width: 378px;
+  }
+
+  .subscribe__text {
+    width: 467px;
+  }
 }
