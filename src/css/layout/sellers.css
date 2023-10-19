@@ -3,8 +3,9 @@
 }
 
 .sellers__title {
+    font-size: 20px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 32px;
     font-weight: 600;
 }
 
@@ -13,30 +14,28 @@
 }
 
 .sellers__list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
     margin-bottom: 32px;
 }
 
-.sellers__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+.sellers__image {
+    border-radius: 15px;
+    margin: 0 auto;
 }
 
 .sellers__text {
-    font-size: 15px;
-    width: 407px;
+    line-height: 18px;
+}
+
+.sellers__text__mob {
+    width: 306px;
+    margin: 0 auto;
     line-height: 18px;
 }
 
 .sellers__button {
-    width: 144px;
-    height: 45px;
     display: flex;
     margin-right: 14px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     border-radius: 100px;
     background: #FD9222;
     color: #FFF;
@@ -44,6 +43,7 @@
     align-items: center;
     border: none;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .sellers__button:hover {
@@ -51,8 +51,67 @@
     color: #FD9222;
 }
 
+@media screen and (max-width: 767px) {
+    .img1 {
+        margin-bottom: 20px;
+    }
+
+    .img2 {
+        margin-top: 32px;
+    }
+
+    .sellers__text {
+        display: none;
+    }
+
+    .sellers__button__mob {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1199px) {
     .img3 {
+        display: none;
+    }
+
+    
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .sellers__title {
+        font-size: 24px;
+        margin-bottom: 50px;
+    }
+
+    .sellers__text {
+        width: 407px;
+    }
+
+    .sellers__list {
+       display: flex;
+       justify-content: center;
+       gap: 16px;
+    }
+
+    .sellers__button {
+        width: 144px;
+        padding: 14px 40px;
+        margin: 0;
+    }
+
+    .sellers__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .sellers__text__mob {
+        display: none;
+    }
+
+    .sellers__button__mob {
         display: none;
     }
 }
