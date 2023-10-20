@@ -52,12 +52,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     border: none;
     cursor: pointer;
     color: #FFF;
-
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 .how {
@@ -68,12 +63,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: #FFF;
     cursor: pointer;
     color: #FFF;
-
-    font-family: Montserrat;
-    font-size: 14px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
 .hero__buttons {
