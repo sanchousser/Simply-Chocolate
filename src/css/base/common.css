@@ -14,3 +14,7 @@ body {
 *:hover {
     transition: var(--animation);
 }
+
+svg {
+    stroke: var(--mainColor);
+}
