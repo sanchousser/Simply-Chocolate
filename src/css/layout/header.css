@@ -85,7 +85,7 @@
 
 .nav__list__icon:hover {
     stroke: var(--hoverColor);
-    transition: 50ms;
+    transition: 100ms;
 }
 
 
