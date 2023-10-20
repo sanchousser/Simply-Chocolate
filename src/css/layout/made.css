@@ -56,7 +56,9 @@
 }
 
 .made__button__icon:hover {
-    stroke: var(--hoverColor);
+    width: 50px;
+    height: 50px;
+    fill: var(--hoverColor);
 }
 
 
