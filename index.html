@@ -24,12 +24,12 @@
   
 
   <script type="module" crossorigin src="/Simply-Chocolate/assets/index-49331645.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-53ec31d5.css">
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-1436c4bc.css">
 </head>
 
 <body>
   <!-- Loads the specified .html file -->
-  <header class="header__section">
+  <header id="header" class="header__section">
   <div class="container">
     <nav class="header__nav">
       <div class="logo__content">
@@ -42,19 +42,19 @@
       </div>
       <ul class="nav__list">
         <li class="nav__list__item">
-          <a href="./hero.html" class="nav__list__link">Home</a>
+          <a href="#header" class="nav__list__link">Home</a>
         </li>
         <li class="nav__list__item">
-          <a href="./made.html" class="nav__list__link">How it’s made?</a>
+          <a href="#made" class="nav__list__link">How it’s made?</a>
         </li>
         <li class="nav__list__item">
-          <a href="./products.html" class="nav__list__link">Our products</a>
+          <a href="#products" class="nav__list__link">Our products</a>
         </li>
         <li class="nav__list__item">
-          <a href="./sellers.html" class="nav__list__link">Top sellers</a>
+          <a href="#sellers" class="nav__list__link">Top sellers</a>
         </li>
         <li class="nav__list__item">
-          <a href="./subscribe.html" class="nav__list__link"
+          <a href="#review" class="nav__list__link"
             >Chocolate is loved</a
           >
         </li>
@@ -95,20 +95,19 @@
         </li>
       </ul>
       <div class="hero__link__icon">
-        <a href="./advantages.html" class="hero__link">scroll down</a>
+        <a href="#advantages" class="hero__link">scroll down</a>
         <div class="div">
-          <svg class="scroll__icon">
-            <use
-              href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-fi-rr-angle-small-left"
-            ></use>
-          </svg>
+          <a href="#advantages"> 
+            <svg class="scroll__icon">
+              <use href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-fi-rr-angle-small-left"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
   </section>
 </div>
-
-  <section class="advatages__section section">
+  <section id="advantages" class="advatages__section section">
   <div class="container">
     <ul class="advantages__list">
       <li class="advantages__list__item">
@@ -208,7 +207,7 @@
   </div>
 </section>
 
-  <section class="made">
+  <section id="made" class="made">
     <div class="container">
         <h2 class="made__title">HOW IT'S <span class="made__title__span">MADE?</span></h2>
         <div class="made__wrapper">
@@ -250,7 +249,7 @@
         </div>
     </div>
 </section>
-  <section class="products">
+  <section id="products" class="products">
     <div class="container">
         <h2 class="products__title">OUR <span class="products__title__span">PRODUCTS</span></h2>
         <div class="swiper products__swiper">
@@ -308,7 +307,7 @@
         </div>
     </div>
 </section>
-  <div class="container">
+  <div id="sellers" class="container">
   <section class="sellers__section">
     <h2 class="sellers__title">
       <span class="sellers__title__top">TOP</span> SELLERS
@@ -382,7 +381,7 @@
   </section>
 </div>
 
-  <section class="review__section">
+  <section id="review" class="review__section">
   <div class="container">
     <h2 class="review__title">
       <span class="review__choco">CHOCOLATE</span> IS LOVED
