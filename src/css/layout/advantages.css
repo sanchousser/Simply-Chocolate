@@ -77,8 +77,12 @@
     transition: var(--animation);
   }
 
-  .advatages__section:hover .advantages__list__item:not(:last-child)::after {
+  .advatages__section:hover .advantages__list__item:first-child::after {
     height: 135px;
     margin-bottom: 0px;
+  }
+
+  .advatages__section:hover .advantages__list__item:nth-child(2)::after {
+    margin-bottom: 120px;
   }
 }
