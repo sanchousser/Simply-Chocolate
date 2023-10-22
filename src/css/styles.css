@@ -26,3 +26,7 @@
 @import url('./layout/sellers.css');
 @import url('./layout/products.css');
 @import url('./layout/review.css');
+
+/* Components */
+
+@import url('./components/mobile-menu.css');
