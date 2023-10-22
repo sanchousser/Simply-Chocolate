@@ -154,7 +154,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     justify-content: flex-start;
 }
 
-.scroll__icon:hover {  
+.hero__link__icon:hover .scroll__icon {  
     padding-bottom: 0px;
 }
 
