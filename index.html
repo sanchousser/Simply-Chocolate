@@ -24,7 +24,7 @@
   
 
   <script type="module" crossorigin src="/Simply-Chocolate/assets/index-8f7f9be3.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-890bb2e4.css">
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-d89d02d9.css">
 </head>
 
 <body>
@@ -81,22 +81,30 @@
           </a>
         </li>
       </ul>
-      <button type="button" class="burger__button" data-menu-button>
+      <button
+        type="button"
+        class="burger__button burger__button__mobile"
+        data-menu-button
+      >
         <svg class="burger__icon">
           <use href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-menu-03-mobile"></use>
         </svg>
       </button>
-      <!-- <button type="button" class="burger__button__tablet" data-menu-button>
-        <svg class="burger__icon_tablet">
-          <use href="./img/icons/symbol-defs.svg#icon-menu-03"></use>
+      <button
+        type="button"
+        class="burger__button burger__button__tablet"
+        data-menu-button
+      >
+        <svg class="burger__icon__tablet">
+          <use href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-menu-03"></use>
         </svg>
-      </button> -->
+      </button>
     </nav>
   </div>
   <!-- Mobile-menu -->
   <div data-menu class="mobile__menu">
     <div class="container mobile__menu__container">
-      <button data-menu-close class="mobile-menu__close-btn" type="button">
+      <button data-menu-close class="close__btn" type="button">
         <svg class="close__btn__icon">
           <use href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-x"></use>
         </svg>
@@ -116,14 +124,15 @@
             <a class="menu__list__link" href="#sellers">Top sellers</a>
           </li>
           <li class="menu__list__item">
-            <a class="menu__list__link" href="#review"
-              >Chocolate is loved</a
-            >
+            <a class="menu__list__link" href="#review">Chocolate is loved</a>
           </li>
         </ul>
         <ul class="menu__social__list">
           <li class="menu__social__item">
-            <a class="menu__social__link" href="https://www.instagram.com/"
+            <a
+              target="_blank"
+              class="menu__social__link"
+              href="https://www.instagram.com/"
               ><svg class="menu__social__icon" width="24" height="24">
                 <use
                   href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-instagram"
@@ -131,7 +140,10 @@
             ></a>
           </li>
           <li class="menu__social__item">
-            <a class="menu__social__link" href="https://twitter.com/"
+            <a
+              target="_blank"
+              class="menu__social__link"
+              href="https://twitter.com/"
               ><svg class="menu__social__icon" width="24" height="24">
                 <use href="/Simply-Chocolate/assets/symbol-defs-d0423f63.svg#icon-twitter"></use></svg
             ></a>
