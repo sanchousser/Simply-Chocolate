@@ -4,5 +4,5 @@
     --bgColor: #1E1823;
     --hoverbgColor: #FCF1E0;
     --basicColor: #FAFAFA;
-    --animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --animation: 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
