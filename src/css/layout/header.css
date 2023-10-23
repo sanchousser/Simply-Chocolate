@@ -113,9 +113,9 @@
 }
 
 @media screen and (min-width: 768px) {
-    /* .burger__button {
+    .burger__button__mobile {
         display: none;
-    } */
+    }
 
     .burger__button__tablet {
         display: block;
@@ -124,7 +124,7 @@
         stroke: var(--mainColor)
     }
 
-    .burger__icon_tablet {
+    .burger__icon__tablet {
         width: 32px;
         height: 32px;
     }
