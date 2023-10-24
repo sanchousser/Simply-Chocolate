@@ -83,6 +83,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transition-property: color;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
+
+
 }
 
 .hero__button:before {
@@ -106,21 +108,25 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     transition-timing-function: ease-out;
     transition: var(--animation);
     border-radius: 100px;
-  }
+}
 
-.hero__button:hover, .hero__button:focus, .hero__button:active {
+.hero__button:hover,
+.hero__button:focus,
+.hero__button:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     color: #FD9222;
     background-color: #FFF;
     transition: var(--animation);
-  }
+}
 
-  .hero__button:hover:before, .hero__button:focus:before, .hero__button:active:before {
+.hero__button:hover:before,
+.hero__button:focus:before,
+.hero__button:active:before {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     transition: var(--animation);
-  }
+}
 
 .hero__link {
     color: #FFF;
@@ -144,7 +150,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     justify-content: flex-start;
 }
 
-.hero__link__icon:hover .scroll__icon {  
+.hero__link__icon:hover .scroll__icon {
     padding-bottom: 0px;
 }
 
@@ -235,10 +241,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         align-items: center;
         justify-content: space-between;
     }
-
+/* 
     .hero__link {
         padding-left: 500px;
-    }
+    } */
 }
 
 @media (min-device-pixel-ratio:2) and (min-width:1200px),

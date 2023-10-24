@@ -15,14 +15,14 @@
   color: #111;
   text-align: center;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 20px;
+  line-height: 120%;
   letter-spacing: -0.6px;
   text-transform: uppercase;
   margin-bottom: 28px;
-  width: 411px;
+  width: 283px;
 }
 
 .igredients__title__span {
