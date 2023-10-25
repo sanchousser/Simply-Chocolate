@@ -14,7 +14,6 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    /* margin: 0 auto; */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
@@ -154,8 +153,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     padding-bottom: 0px;
 }
 
-
-
 /* Tablet */
 
 @media screen and (min-width: 768px) {
@@ -192,7 +189,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     }
 
     .hero__link {
-        /* position: absolute; */
         right: 0;
         margin-right: 14px;
     }
@@ -241,10 +237,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         align-items: center;
         justify-content: space-between;
     }
-/* 
-    .hero__link {
-        padding-left: 500px;
-    } */
 }
 
 @media (min-device-pixel-ratio:2) and (min-width:1200px),
