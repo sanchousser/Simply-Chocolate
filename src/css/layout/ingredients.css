@@ -50,6 +50,8 @@
 }
 
 .ingredients__list__item {
+  width: 335px;
+  height: 270px;
   padding: 28px;
   border-radius: 15px;
   border: 1px solid #fd9222;
@@ -86,6 +88,26 @@
 
 /* Tablet */
 @media screen and (min-width: 768px) {
+
+  .ingredients__section {
+    padding-bottom: 100px;
+  }
+
+  .ingredients__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .ingredients__list__item:last-child {
+    order: 3;
+  }
+
+  .black {
+    order: 4;
+  }
+
 }
 
 /* Desktop */
@@ -100,11 +122,22 @@
   }
 
   .ingredients__list__item {
+    width: 270px;
+    height: 270px;
     flex-basis: calc((100% - 4 * 30px) / 4);
     padding: 28px;
     border-radius: 15px;
     border: 1px solid #fd9222;
   }
+
+  .ingredients__list__item:last-child {
+    order: 4;
+  }
+
+  .black {
+    order: 3;
+  }
+
 
   .ingredients__text {
     color: #111;
