@@ -52,6 +52,12 @@
     color: #FD9222;
 }
 
+.img1:hover,
+.img2:hover,
+.img3:hover {
+    transform: scale(1.02);
+}
+
 @media screen and (max-width: 767px) {
     .img1 {
         margin-bottom: 20px;
