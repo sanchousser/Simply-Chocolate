@@ -269,10 +269,11 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         height: 42px;
     }
 
-@media (min-device-pixel-ratio:2) and (min-width:1200px),
-(min-resolution: 192dpi) and (min-width:1200px),
-(min-resolution: 2dppx) and (min-width:1200px) {
-    .hero__section {
-        background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url('/img/desktop/hero-desktop@2x.jpg');
+    @media (min-device-pixel-ratio:2) and (min-width:1200px),
+    (min-resolution: 192dpi) and (min-width:1200px),
+    (min-resolution: 2dppx) and (min-width:1200px) {
+        .hero__section {
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url('/img/desktop/hero-desktop@2x.jpg');
+        }
     }
 }
