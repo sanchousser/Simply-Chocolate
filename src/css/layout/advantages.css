@@ -9,7 +9,7 @@
 
 .advantages__list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -33,6 +33,7 @@
 .advantages__list__item {
   position: relative;
   margin-bottom: 20px;
+  max-width: 308px;
 }
 
 .advantages__icon {
@@ -61,6 +62,9 @@
 
   .advantages__list__item {
     flex-basis: calc((100% - 2 * 60px) / 2);
+
+  .advantages__list__item:nth-child(2) {
+    margin-left: 60px;
   }
 }
 
@@ -74,6 +78,7 @@
     gap: 70px;
   }
 
+
   .advantages__list__item:not(:last-child)::after {
     content: '';
     position: absolute;
@@ -84,6 +89,7 @@
     border-radius: 1px;
     width: 1px;
     height: 124px;
+    margin-bottom: 60px;
     transition: var(--animation);
   }
 

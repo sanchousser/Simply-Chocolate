@@ -56,7 +56,8 @@
 }
 
 .made__button__icon:hover {
-    stroke: var(--hoverColor);
+    width: 50px;
+    height: 50px;
 }
 
 
@@ -69,13 +70,16 @@
     display: flex;
     width: 335px;
     height: 451px;
-    transition: var(--animation);
+
+
 }
 
 .made__div:hover {
-    outline: 2px solid var(--hoverColor);
+    outline: 1px solid var(--hoverColor);
     background-color: var(--hoverbgColor);
 }
+
+
 
 .made__subtitle {
     color: var(--mainColor);
@@ -113,6 +117,11 @@
         height: 400px;
         margin-right: 0px;
         margin-bottom: 20px;
+    }
+
+    .made__button {
+        bottom: 222px;
+        left: 278px;
     }
 
     .made__div {
@@ -155,12 +164,6 @@
         height: 400px;
         margin-bottom: 0px;
         margin-right: 20px;
-    }
-    
-    
-    .made__button {
-        bottom: 222px;
-        left: 278px;
     }
     
     

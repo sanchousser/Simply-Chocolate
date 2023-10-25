@@ -1,7 +1,7 @@
 .hero__section {
     min-height: 621px;
     background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-    url('/img/mobile/hero-mobile.jpg');
+        url('/img/mobile/hero-mobile.jpg');
     background-color: var(--bgColor);
     background-size: cover;
     background-repeat: no-repeat;
@@ -14,17 +14,16 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
-    /* margin: 0 auto; */
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px),
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .hero__section { 
+    .hero__section {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
             url('/img/mobile/hero-mobile@2x.jpg');
-        }
+    }
 }
 
 .hero__title {
@@ -51,6 +50,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: #FFF;
     border: none;
     cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
 }
 
 .how {
@@ -60,29 +61,113 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background: inherit;
     color: #FFF;
     cursor: pointer;
+    color: #FFF;
+    font-weight: 600;
 }
 
-.hero__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.hero__button {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    transition: var(--animation);
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+
+}
+
+.hero__button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFF;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    transition: var(--animation);
+    border-radius: 100px;
+}
+
+.hero__button:hover,
+.hero__button:focus,
+.hero__button:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #FD9222;
+    background-color: #FFF;
+    transition: var(--animation);
+}
+
+.hero__button:hover:before,
+.hero__button:focus:before,
+.hero__button:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    transition: var(--animation);
 }
 
 .hero__link {
     color: #FFF;
     font-size: 13px;
+    margin-right: 12px;
+    margin-left: 20px;
 }
 
-.scroll__icon {}
-
-.buy:hover {
-    background: #FCF1E0;
-    color: #FD9222;
+.scroll__icon {
+    width: 28px;
+    height: 28px;
+    padding: 6px;
+    background-color: #FFF;
+    border-radius: 50%;
+    fill: var(--hoverColor);
 }
 
-.how:hover {
-    border: 1px solid #FD9222;
-    color: #FD9222;
+.hero__link__icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero__link__icon:hover .scroll__icon {
+    padding-bottom: 0px;
+    background-color: var(--hoverColor);
+    fill: var(--basicColor);
+    transition: var(--animation);
+    width: 32px;
+    height: 32px;
+}
+
+.hero__link__icon:hover {
+    cursor: pointer;
+    transition: var(--animation);
+}
+
+.hero__link__icon:hover .hero__link {
+    color: var(--hoverColor);
+    transition: var(--animation);
+    font-size: 125%;
+
 }
 
 /* Tablet */
@@ -90,7 +175,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-width: 768px) {
     .hero__section {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-        url('/img/tablet/hero-tablet.jpg');
+            url('/img/tablet/hero-tablet.jpg');
         position: relative;
         min-height: 890px;
     }
@@ -115,15 +200,27 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
     .hero__content {
         display: flex;
-        align-items: ce;
+        align-items: center;
         justify-content: space-between;
         padding-left: 22px;
     }
 
     .hero__link {
-        position: absolute;
         right: 0;
-        padding-right: 92px;
+        margin-right: 14px;
+    }
+
+    .scroll__icon {
+        width: 38px;
+        height: 38px;
+        padding: 8px;
+        transition: var(--animation);
+    }
+
+
+    .hero__link__icon {
+        margin-bottom: 30px;
+        margin-right: 40px;
     }
 }
 
@@ -132,7 +229,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 (min-resolution: 2dppx) and (min-width:768px) {
     .hero__section {
         background-image: linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%),
-        url('/img/tablet/hero-tablet@2x.jpg');
+            url('/img/tablet/hero-tablet@2x.jpg');
     }
 }
 
@@ -141,8 +238,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 @media screen and (min-width: 1200px) {
     .hero__section {
         min-height: 600px;
-        background-image: 
-        linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url('/img/desktop/hero-desktop.jpg');
+        background-image:
+            linear-gradient(180deg, rgba(17, 17, 17, 0.00) 0%, rgba(17, 17, 17, 0.40) 100%), url('/img/desktop/hero-desktop.jpg');
     }
 
     .hero__title {
@@ -158,10 +255,19 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         justify-content: space-between;
     }
 
+    /* 
     .hero__link {
         padding-left: 500px;
+    } */
+
+    .hero__link__icon:hover .scroll__icon {
+        padding-bottom: 0px;
+        background-color: var(--hoverColor);
+        fill: var(--basicColor);
+        transition: var(--animation);
+        width: 42px;
+        height: 42px;
     }
-}
 
 @media (min-device-pixel-ratio:2) and (min-width:1200px),
 (min-resolution: 192dpi) and (min-width:1200px),

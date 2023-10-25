@@ -16,18 +16,16 @@
     color: #FD9222;
 }
 
-.review__list {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-    margin-bottom: 31px;
-    flex-wrap: wrap;
+
+.review__swiper {
+    padding-bottom: 57px;
 }
+
 
 .review__card {
     position: relative;
     text-align: center;
-    width: 360px;
+    width: 335px;
     height: 200px;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
@@ -41,8 +39,8 @@
 .review__image {
     position: absolute;
     margin-bottom: 20px;
-    left: 40%;
-    bottom: 72%;
+    left: 39%;
+    top: -23%;
 }
 
 .review__card__name {
@@ -57,11 +55,12 @@
     color: rgba(17, 17, 17, 0.70);
     font-size: 15px;
     line-height: 18px;
-    max-width: 312px;
+    max-width: 299px;
 }
 
 .review__button {
     display: flex;
+    font-weight: 600;
     width: 222px;
     height: 50px;
     padding: 14px 40px;
@@ -75,14 +74,50 @@
     font-size: 18px;
     font-weight: 600;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 .review__card:hover {
-    box-shadow: 4px 4px 4px 4px rgba(123, 123, 123, 0.048);
+    transform: scale(1.025);
 }
 
 .review__button:hover {
     border-radius: 100px;
     background: #FD9222;
     color: #FFF;
+    transition: var(--animation);
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.7);
+    transition: var(--animation);
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    background-color: #FD9222;
+    border-radius: 20px;
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px) {
+    .review__card {
+        width: 344px;
+    }
+
+    .review__card__text {
+        max-width: 312px;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+    .review__card {
+        width: 360px;
+    }
 }
