@@ -2,7 +2,8 @@
 
 .advatages__section {
   background: #1e1823;
-  padding: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-top: 72px;
 }
 
@@ -14,7 +15,6 @@
 
 .advantages__title {
   color: #fff;
-  font-family: Montserrat;
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -24,10 +24,8 @@
 
 .advantages__text {
   color: rgba(255, 255, 255, 0.7);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: -0.28px;
 }
@@ -49,6 +47,21 @@
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+  .advatages__section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0 60px;
+  }
+
+  .advantages__list__item {
+    flex-basis: calc((100% - 2 * 60px) / 2);
+  }
 }
 
 /* Desktop */
@@ -64,12 +77,22 @@
   .advantages__list__item:not(:last-child)::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 40px;
     right: -18px;
     display: block;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 1px;
     width: 1px;
     height: 124px;
+    transition: var(--animation);
+  }
+
+  .advatages__section:hover .advantages__list__item:first-child::after {
+    height: 135px;
+    margin-bottom: 0px;
+  }
+
+  .advatages__section:hover .advantages__list__item:nth-child(2)::after {
+    margin-bottom: 120px;
   }
 }
