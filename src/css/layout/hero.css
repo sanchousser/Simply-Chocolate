@@ -140,7 +140,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     padding: 6px;
     background-color: #FFF;
     border-radius: 50%;
-    transition: var(--animation);
+    fill: var(--hoverColor);
 }
 
 .hero__link__icon {
@@ -151,6 +151,23 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 
 .hero__link__icon:hover .scroll__icon {
     padding-bottom: 0px;
+    background-color: var(--hoverColor);
+    fill: var(--basicColor);
+    transition: var(--animation);
+    width: 32px;
+    height: 32px;
+}
+
+.hero__link__icon:hover {
+    cursor: pointer;
+    transition: var(--animation);
+}
+
+.hero__link__icon:hover .hero__link {
+    color: var(--hoverColor);
+    transition: var(--animation);
+    font-size: 125%;
+
 }
 
 /* Tablet */
@@ -197,13 +214,13 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         width: 38px;
         height: 38px;
         padding: 8px;
-        margin-right: 40px;
         transition: var(--animation);
     }
 
 
     .hero__link__icon {
-        padding-bottom: 30px;
+        margin-bottom: 30px;
+        margin-right: 40px;
     }
 }
 
@@ -237,7 +254,20 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         align-items: center;
         justify-content: space-between;
     }
-}
+
+    /* 
+    .hero__link {
+        padding-left: 500px;
+    } */
+
+    .hero__link__icon:hover .scroll__icon {
+        padding-bottom: 0px;
+        background-color: var(--hoverColor);
+        fill: var(--basicColor);
+        transition: var(--animation);
+        width: 42px;
+        height: 42px;
+    }
 
 @media (min-device-pixel-ratio:2) and (min-width:1200px),
 (min-resolution: 192dpi) and (min-width:1200px),
