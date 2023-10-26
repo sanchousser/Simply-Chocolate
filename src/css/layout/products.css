@@ -1,5 +1,5 @@
 .products__title {
-    color: #111;
+    color: var(--mainColor);
     text-align: center;
     font-size: 20px;
     font-weight: 600;
@@ -10,7 +10,7 @@
 }
 
 .products__title__span {
-    color: #FD9222;
+    color: var(--hoverColor);
 }
 
 .products__swiper {
@@ -79,7 +79,7 @@
 }
 
 .products__item__title {
-    color: #111;
+    color: var(--mainColor);
     font-size: 18px;
     font-weight: 600;
     line-height: 133.33%;
@@ -98,7 +98,7 @@
 }
 
 .products__item__price {
-    color: #111;
+    color: var(--mainColor);
 
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -176,7 +176,7 @@
 .swiper-pagination-bullet-active {
     width: 28px;
     height: 13px;
-    background-color: #FD9222;
+    background-color: var(--hoverColor);
     border-radius: 20px;
 }
 

@@ -13,7 +13,7 @@
 }
 
 .review__choco {
-    color: #FD9222;
+    color: var(--hoverColor);
 }
 
 
@@ -74,7 +74,7 @@
     align-items: flex-start;
     gap: 14px;
     border-radius: 100px;
-    border: 1px solid #FD9222;
+    border: 1px solid var(--hoverColor);
     background-color: transparent;
 
     font-size: 18px;
@@ -89,7 +89,7 @@
 
 .review__button:hover {
     border-radius: 100px;
-    background: #FD9222;
+    background: var(--hoverColor);
     color: #FFF;
     transition: var(--animation);
 }
@@ -104,7 +104,7 @@
 .swiper-pagination-bullet-active {
     width: 28px;
     height: 13px;
-    background-color: #FD9222;
+    background-color: var(--hoverColor);
     border-radius: 20px;
 }
 

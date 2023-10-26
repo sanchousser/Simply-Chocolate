@@ -1,7 +1,7 @@
 /* Mobile */
 
 .ingredients__section {
-  background-color: #fafafa;
+  background-color: var(--basicColor);
 }
 
 .ingredients__text__thumb {
@@ -12,11 +12,9 @@
 }
 
 .igredients__title {
-  color: #111;
+  color: var(--mainColor);
   text-align: center;
-  font-family: Montserrat;
   font-size: 20px;
-  font-style: normal;
   font-weight: 600;
   line-height: 120%;
   letter-spacing: -0.6px;
@@ -26,15 +24,13 @@
 }
 
 .igredients__title__span {
-  color: #fd9222;
+  color: var(--hoverColor);
 }
 
 .ingredients__text {
-  color: #111;
+  color: var(--mainColor);
   text-align: center;
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
@@ -63,9 +59,7 @@
 }
 
 .ingredients__section h4 {
-  font-family: Montserrat;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 18px;
   letter-spacing: -0.28px;
@@ -144,9 +138,9 @@
   .ingredients__text {
     color: #111;
     text-align: center;
-    font-family: Montserrat;
+
     font-size: 14px;
-    font-style: normal;
+
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
@@ -156,9 +150,9 @@
   .ingredients__text {
     color: #111;
     text-align: center;
-    font-family: Montserrat;
+
     font-size: 14px;
-    font-style: normal;
+
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;

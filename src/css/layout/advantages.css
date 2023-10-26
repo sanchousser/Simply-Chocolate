@@ -1,7 +1,7 @@
 /* Mobile */
 
 .advatages__section {
-  background: #1e1823;
+  background: var(--bgColor);
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 72px;
@@ -16,7 +16,6 @@
 .advantages__title {
   color: #fff;
   font-size: 18px;
-  font-style: normal;
   font-weight: 600;
   line-height: normal;
   margin-bottom: 18px;
@@ -25,7 +24,6 @@
 .advantages__text {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
-  font-style: normal;
   line-height: normal;
   letter-spacing: -0.28px;
 }

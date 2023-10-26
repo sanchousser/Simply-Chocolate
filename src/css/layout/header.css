@@ -101,7 +101,7 @@
 
 .nav__list__item:hover,
 .nav__list__item:focus {
-    color: #FD9222;
+    color: var(--hoverColor);
     transition: 50ms;
 }
 
