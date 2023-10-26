@@ -21,7 +21,15 @@
     padding-bottom: 57px;
 }
 
+
 .review__item {
+}
+
+
+.review__card {
+    
+    margin-top: 51px;
+
     position: relative;
     text-align: center;
     width: 335px;
@@ -34,6 +42,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 
 .review__image {
     position: absolute;

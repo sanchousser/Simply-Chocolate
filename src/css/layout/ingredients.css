@@ -118,13 +118,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 30px;
+    gap: 19px;
   }
 
   .ingredients__list__item {
     width: 270px;
     height: 270px;
-    flex-basis: calc((100% - 4 * 30px) / 4);
+    flex-basis: calc((100% - 4 * 19px) / 4);
     padding: 28px;
     border-radius: 15px;
     border: 1px solid #fd9222;
