@@ -61,6 +61,7 @@
 .footer__social__icon__image {
   width: 24px;
   height: 24px;
+  fill: transparent;
   stroke: var(--basicColor);
   cursor: pointer;
 }
