@@ -10,7 +10,7 @@
 }
 
 .sellers__title__top {
-    color: #FD9222;
+    color: var(--hoverColor);
 }
 
 .sellers__list {
@@ -38,7 +38,7 @@
     font-weight: 600;
     padding: 12px 28px;
     border-radius: 100px;
-    background: #FD9222;
+    background: var(--hoverColor);
     color: #FFF;
     justify-content: center;
     align-items: center;
@@ -48,8 +48,8 @@
 }
 
 .sellers__button:hover {
-    background: #FCF1E0;
-    color: #FD9222;
+    background: var(--hoverbgColor);
+    color: var(--hoverColor);
 }
 
 .img1:hover,

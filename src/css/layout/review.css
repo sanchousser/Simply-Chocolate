@@ -13,7 +13,7 @@
 }
 
 .review__choco {
-    color: #FD9222;
+    color: var(--hoverColor);
 }
 
 
@@ -22,7 +22,12 @@
 }
 
 
-.review__card {
+
+
+.review__item {
+    
+    margin-top: 51px;
+
     position: relative;
     text-align: center;
     width: 335px;
@@ -36,6 +41,7 @@
     align-items: center;
 }
 
+
 .review__image {
     position: absolute;
     margin-bottom: 20px;
@@ -43,7 +49,7 @@
     top: -23%;
 }
 
-.review__card__name {
+.review__item__name {
     font-size: 20px;
     font-weight: 600;
     line-height: 24px;
@@ -51,7 +57,7 @@
     margin-top: 55px;
 }
 
-.review__card__text {
+.review__item__text {
     color: rgba(17, 17, 17, 0.70);
     font-size: 15px;
     line-height: 18px;
@@ -68,7 +74,7 @@
     align-items: flex-start;
     gap: 14px;
     border-radius: 100px;
-    border: 1px solid #FD9222;
+    border: 1px solid var(--hoverColor);
     background-color: transparent;
 
     font-size: 18px;
@@ -77,13 +83,13 @@
     margin-top: 50px;
 }
 
-.review__card:hover {
+.review__item:hover {
     transform: scale(1.025);
 }
 
 .review__button:hover {
     border-radius: 100px;
-    background: #FD9222;
+    background: var(--hoverColor);
     color: #FFF;
     transition: var(--animation);
 }
@@ -98,18 +104,18 @@
 .swiper-pagination-bullet-active {
     width: 28px;
     height: 13px;
-    background-color: #FD9222;
+    background-color: var(--hoverColor);
     border-radius: 20px;
 }
 
 /* Tablet */
 
 @media screen and (min-width:768px) {
-    .review__card {
+    .review__item {
         width: 344px;
     }
 
-    .review__card__text {
+    .review__item__text {
         max-width: 312px;
     }
 }
@@ -117,7 +123,7 @@
 /* Desktop */
 
 @media screen and (min-width:1200px) {
-    .review__card {
+    .review__item {
         width: 360px;
     }
 }

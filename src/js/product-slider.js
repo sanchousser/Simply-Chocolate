@@ -24,4 +24,21 @@ const productsSwiper = new Swiper('.products__swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+
+    autoplay: {
+      delay: 2300,
+      stopOnLastSlide: false,
+      disableonInteraction: true,
+    },
+    freeMode: true,
+    speed: 800,
+    mousewheel: {
+      invert: true,
+    },
+    parallax: true,
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
   });

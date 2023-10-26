@@ -46,11 +46,10 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     margin-right: 14px;
     padding: 12px 28px;
     border-radius: 100px;
-    background: #FD9222;
+    background: var(--hoverColor);
     color: #FFF;
     border: none;
     cursor: pointer;
-    color: #FFF;
     font-weight: 600;
 }
 
@@ -61,7 +60,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     background: inherit;
     color: #FFF;
     cursor: pointer;
-    color: #FFF;
     font-weight: 600;
 }
 
@@ -114,7 +112,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 .hero__button:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    color: #FD9222;
+    color: var(--hoverColor);
     background-color: #FFF;
     transition: var(--animation);
 }
@@ -222,6 +220,16 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         margin-bottom: 30px;
         margin-right: 40px;
     }
+
+    .hero__link__icon:hover .scroll__icon {
+        padding-bottom: 0px;
+        background-color: var(--hoverColor);
+        fill: var(--basicColor);
+        transition: var(--animation);
+        width: 42px;
+        height: 42px;
+    }
+
 }
 
 @media (min-device-pixel-ratio:2) and (min-width:768px),
@@ -259,15 +267,6 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero__link {
         padding-left: 500px;
     } */
-
-    .hero__link__icon:hover .scroll__icon {
-        padding-bottom: 0px;
-        background-color: var(--hoverColor);
-        fill: var(--basicColor);
-        transition: var(--animation);
-        width: 42px;
-        height: 42px;
-    }
 
     @media (min-device-pixel-ratio:2) and (min-width:1200px),
     (min-resolution: 192dpi) and (min-width:1200px),

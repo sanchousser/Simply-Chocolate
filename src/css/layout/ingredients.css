@@ -1,5 +1,11 @@
 /* Mobile */
 
+
+.ingredients__section {
+  background-color: var(--basicColor);
+}
+
+
 .ingredients__text__thumb {
   display: flex;
   flex-direction: column;
@@ -20,7 +26,7 @@
 }
 
 .igredients__title__span {
-  color: #fd9222;
+  color: var(--hoverColor);
 }
 
 .ingredients__text {
@@ -160,12 +166,15 @@
 
 @media screen and (min-width: 1200px) {
   .ingredients__list {
+
     flex-wrap: nowrap;
+
     gap: 19px;
   }
 
   .ingredients__list__item {
     width: 270px;
+
     border-radius: 15px;
     border: 1px solid var(--hoverColor);
   }
@@ -184,7 +193,9 @@
   .ingredients__text {
     color: var(--mainColor);
     text-align: center;
+
     font-size: 14px;
+
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
@@ -194,7 +205,9 @@
   .ingredients__text {
     color: var(--mainColor);
     text-align: center;
+
     font-size: 14px;
+
     font-weight: 400;
     line-height: 18px;
     letter-spacing: -0.28px;
