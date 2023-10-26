@@ -118,13 +118,27 @@
   color: var(--mainColor);
 }
 
+.ingrediensts__overlay__button:hover {
+  transform: scale(1.1);
+}
+
 .button_orange {
   background: var(--hoverColor);
+}
+
+.button_orange:hover {
+  background: var(--bgColor);
+  color: var(--hoverColor);
 }
 
 .button_white {
   background: var(--basicColor);
   border: 1px solid var(--hoverColor);
+}
+
+.button_white:hover {
+  background: var(--mainColor);
+  color: var(--hoverbgColor);
 }
 
 .ingrediensts__overlay__text {
