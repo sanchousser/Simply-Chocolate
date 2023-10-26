@@ -1,27 +1,36 @@
 .footer {
   background-color: var(--bgColor);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+}
 
 .footer__title {
   color: #fff;
-  font-size: 28px;
+
+  font-size: 24px;
   font-weight: 500;
-  line-height: 34px;
-  letter-spacing: -0.56px;
+  line-height: 116.667%;
+  letter-spacing: -0.48px;
   margin-bottom: 32px;
+  width: 300px;
 }
 
 .footer__title span {
   color: var(--hoverColor);
+
+}
+
+.footer__contact__info {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .footer__contact {
   display: flex;
   flex-direction: column;
-  margin-right: 63px;
 }
 
 .contact__us {
@@ -29,14 +38,21 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 128.571%;
+
+  margin-bottom: 14px;
+\
 }
 
 .footer__contact a {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  line-height: 18px;
+  line-height: 128.571%;
   letter-spacing: -0.28px;
+}
+
+.contact__us + a {
+  margin-bottom: 4px;
 }
 
 .footer__contact__info {
@@ -46,17 +62,22 @@
 }
 
 .footer__info {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 32px;
 }
 
+.footer__social__icon__image:first-child {
+  margin-right: 14px;
+}
 
 .footer__social__icon__image {
-  width: 24px;
-  height: 24px;
+
+  width: 22px;
+  height: 22px;
+
   fill: transparent;
+
   stroke: var(--basicColor);
+  fill: currentColor;
   cursor: pointer;
 }
 
@@ -85,7 +106,6 @@
   line-height: 16px; /* 114.286% */
   letter-spacing: -0.28px;
 
-
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -94,7 +114,7 @@
 }
 
 .footer_list_link:before {
-  content: "";
+  content: '';
   position: absolute;
   z-index: -1;
   left: 0;
@@ -110,15 +130,21 @@
   transition-timing-function: ease-out;
   border-radius: 10px;
 }
-.footer_list_link:hover:before, .footer_list_link:focus:before, .footer_list_link:active:before {
+
+.footer_list_link:hover:before,
+.footer_list_link:focus:before,
+.footer_list_link:active:before {
   right: 0;
 }
-
-
 
 /* Tablet */
 
 @media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .footer__info {
     display: flex;
     flex-direction: row;
@@ -136,14 +162,18 @@
 
 @media screen and (min-width: 1200px) {
   .footer__title {
+
+    color: #fff;
+    font-size: 28px;
+
     /* color: #fff;
 
     font-size: 28px;
+
 
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.56px;
     width: 300px;
-    margin-right: 543px; */
   }
 }
