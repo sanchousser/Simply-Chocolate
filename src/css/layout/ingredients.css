@@ -124,7 +124,9 @@
   .ingredients__list__item {
     width: 270px;
     height: 270px;
+
     flex-basis: calc((100% - 4 * 19px) / 4);
+    
     padding: 28px;
     border-radius: 15px;
     border: 1px solid #fd9222;
