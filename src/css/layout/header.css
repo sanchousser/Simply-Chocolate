@@ -4,11 +4,13 @@
 }
 
 .logo {
+    display: flex;
     font-size: 14px;
     font-weight: 700;
     line-height: 18px;
     letter-spacing: -0.42px;
-    margin-right: 4px;
+    gap: 4px;
+    align-items: center;
 }
 
 .header__nav {
@@ -57,7 +59,7 @@
     height: 28px;
 }
 
-.burger__button__tablet {
+.burger__icon__tablet {
     display: none;
 }
 
@@ -118,11 +120,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    .burger__button__mobile {
+    .burger__icon{
         display: none;
     }
 
-    .burger__button__tablet {
+    .burger__icon__tablet {
         display: block;
         border: none;
         background-color: transparent;
@@ -169,7 +171,7 @@
         align-items: center;
     }
 
-    .burger__button__tablet {
+    .burger__button {
         display: none;
     }
 }
