@@ -85,6 +85,7 @@
 
 .close__btn__icon:hover {
     stroke: #FD9222;
+    transform: scale(1.4);
 }
 
 /* Tablet */
@@ -92,6 +93,11 @@
 @media screen and (min-width: 768px) {
     .mobile__menu {
         width: 290px;
+    }
+
+    .close__btn {
+        position: absolute;
+        left: -230px;
     }
 
     .close__btn__icon {
