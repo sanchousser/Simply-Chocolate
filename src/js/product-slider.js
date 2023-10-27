@@ -27,7 +27,7 @@ const productsSwiper = new Swiper('.products__swiper', {
 
 
     autoplay: {
-      delay: 2300,
+      delay: 3000,
       stopOnLastSlide: false,
       disableonInteraction: true,
     },
@@ -36,9 +36,9 @@ const productsSwiper = new Swiper('.products__swiper', {
     mousewheel: {
       invert: true,
     },
-    parallax: true,
     keyboard: {
       enabled: true,
       onlyInViewport: false,
+      sensitivity: 0.01,
     },
   });

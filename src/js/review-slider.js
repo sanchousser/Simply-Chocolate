@@ -24,4 +24,21 @@ const reviewSwiper = new Swiper('.review__swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+
+    autoplay: {
+      delay: 3000,
+      stopOnLastSlide: false,
+      disableonInteraction: true,
+    },
+    freeMode: true,
+    speed: 800,
+    mousewheel: {
+      invert: true,
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+      sensitivity: 0.0001,
+    },
   });

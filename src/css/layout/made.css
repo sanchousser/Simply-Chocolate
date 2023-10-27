@@ -91,7 +91,7 @@
 }
 
 .made__list {
-    list-style: disc;
+    list-style-image: url('/img/icons/Ellipse.svg');
 }
 
 .made__list__item {
@@ -101,9 +101,16 @@
     line-height: 128.571%;
     letter-spacing: -0.28px;
     margin-bottom: 18px;
-    margin-left: 27px;
-    max-width: 278px;
+    margin-left: 25px;
+    max-width: 289px;
+    padding-left: 8px;
+    
 }
+
+.made__list__item:last-child {
+    margin-bottom: 0px;
+}
+
 
 @media screen and (min-width:768px) {
 
@@ -128,13 +135,13 @@
         height: 356px;
     }
 
-    .made__subtitle { 
+    .made__subtitle {
         max-width: 350px;
     }
 
     .made__list__item {
         margin-bottom: 18px;
-        max-width: 464px;
+        max-width: 475px;
     }
 
 }
@@ -143,7 +150,7 @@
     .made {
         padding-bottom: 128px;
     }
-    
+
     .made__title {
         font-size: 24px;
         padding-bottom: 32px;
@@ -152,27 +159,27 @@
     .made__title__span {
         font-size: 24px;
     }
-    
-    
+
+
     .made__wrapper {
         flex-direction: row;
     }
-    
+
     .made__video {
         width: 600px;
         height: 400px;
         margin-bottom: 0px;
         margin-right: 20px;
     }
-    
-    
-    
+
+
+
     .made__div {
         width: 516px;
         height: 400px;
     }
-    
-    
+
+
     .made__subtitle {
         max-width: 370px;
         padding-top: 32px;
@@ -180,14 +187,16 @@
         padding-bottom: 28px;
         margin: 0px;
     }
-    
-    .made__list {
-        list-style: disc;
-    }
-    
+
+
     .made__list__item {
         margin-bottom: 24px;
-        margin-left: 45px;
-        max-width: 409px;
+        margin-left: 43px;
+        max-width: 420px;
+        
+    }
+
+    .made__list__item:last-child {
+        margin-bottom: 0px
     }
 }
