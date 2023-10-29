@@ -1,3 +1,7 @@
+.backdrop .is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
 .modal__title {
     text-align: center;
     margin-bottom: 32px;
@@ -35,14 +39,62 @@
     background: #FAFAFA;
 }
 
+.modal__input__title {
+    color: #000;
+    line-height: 18px;
+    font-weight: 500;
+}
+
 .personal__info {
     display: flex;
     align-items: end;
+    justify-content: space-between;
+    margin-bottom: 18px;
 }
 
-.modal__input__title {
-    color: #000;
-    font-weight: 500;
-    line-height: 18px;
-    margin-bottom: 8px;
+.name,
+.surname {
+    background-color: transparent;
+    margin-top: 8px;
+    width: 246px;
+    height: 66px;
+    border-radius: 13px;
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+        border-color: #FD9222;
+    }
+}
+
+input::placeholder {
+    font-size: 18px;
+    color: rgba(64, 64, 64, 0.30);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    padding: 22px 24px;
+}
+
+.modal__form__input {
+    background-color: transparent;
+    margin-top: 8px;
+    width: 100%;
+    height: 66px;
+    border-radius: 13px;
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    cursor: pointer;
+    
+        &:focus {
+            outline: none;
+            border-color: #FD9222;
+        }
+}
+
+.email {
+    margin-bottom: 18px;
+}
+
+.phone {
+    margin-bottom: 18px;
 }
