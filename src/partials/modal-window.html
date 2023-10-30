@@ -6,43 +6,30 @@
       </svg>
     </button>
     <h2 class="modal__title"><span class="modal__buy">BUY</span> NOW</h2>
-    <ul class="modal__list">
-      <li class="modal__list__item">
-        <img
-          srcset="/img/modal-images/img-1.png 1x, /img/modal-images/img-1@2x 2x"
-          src="#"
-          alt="chocolate slice"
-        />
-        <button type="button" class="modal__list__button">100 g</button>
-      </li>
-      <li class="modal__list__item">
-        <img
-          srcset="/img/modal-images/img-2.png 1x, /img/modal-images/img-2@2x 2x"
-          src="#"
-          alt="white chocolate"
-        />
-        <button type="button" class="modal__list__button">200 g</button>
-      </li>
-      <li class="modal__list__item">
-        <img
-          srcset="/img/modal-images/img-3.png 1x, /img/modal-images/img-3@2x 2x"
-          src="#"
-          alt="milk chocolate"
-        />
-        <button type="button" class="modal__list__button">300 g</button>
-      </li>
-    </ul>
+    <div class="swiper modal__swiper">
+      <ul class="modal__list swiper-wrapper">
+        <li class="modal__list__item swiper-slide">
+          <img srcset="/img/modal-images/img-1.png 1x, /img/modal-images/img-1@2x 2x" src="#" alt="chocolate slice" />
+          <button type="button" class="modal__list__button">100 g</button>
+        </li>
+        <li class="modal__list__item swiper-slide">
+          <img srcset="/img/modal-images/img-2.png 1x, /img/modal-images/img-2@2x 2x" src="#" alt="white chocolate" />
+          <button type="button" class="modal__list__button">200 g</button>
+        </li>
+        <li class="modal__list__item swiper-slide">
+          <img srcset="/img/modal-images/img-3.png 1x, /img/modal-images/img-3@2x 2x" src="#" alt="milk chocolate" />
+          <button type="button" class="modal__list__button">300 g</button>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+    </div>
     <div class="personal__info">
       <form>
         <div class="modal__form">
           <label class="modal__label">
             <span class="modal__input__title">Personal information</span>
             <div class="modal__form__field">
-              <input
-                placeholder="Name"
-                type="text"
-                class="modal__form__input__info name"
-              />
+              <input placeholder="Name" type="text" class="modal__form__input__info name" />
             </div>
           </label>
         </div>
@@ -51,11 +38,7 @@
         <div class="modal__form">
           <label class="modal__label">
             <div class="modal__form__field">
-              <input
-                placeholder="Surname"
-                type="text"
-                class="modal__form__input__info surname"
-              />
+              <input placeholder="Surname" type="text" class="modal__form__input__info surname" />
             </div>
           </label>
         </div>
@@ -66,11 +49,7 @@
         <label class="modal__label">
           <span class="modal__input__title">Email</span>
           <div class="modal__form__field email">
-            <input
-              placeholder="Enter your email"
-              type="text"
-              class="modal__form__input"
-            />
+            <input placeholder="Enter your email" type="text" class="modal__form__input" />
           </div>
         </label>
       </div>
@@ -80,11 +59,7 @@
         <label class="modal__label">
           <span class="modal__input__title">Phone number</span>
           <div class="modal__form__field">
-            <input
-              placeholder="Phone number"
-              type="text"
-              class="modal__form__input phone"
-            />
+            <input placeholder="Phone number" type="text" class="modal__form__input phone" />
           </div>
         </label>
       </div>
@@ -94,11 +69,7 @@
         <label class="modal__label">
           <span class="modal__input__title">Card number</span>
           <div class="modal__form__field">
-            <input
-              placeholder="Enter card"
-              type="text"
-              class="modal__form__input card"
-            />
+            <input placeholder="Enter card" type="text" class="modal__form__input card" />
           </div>
         </label>
       </div>
@@ -108,15 +79,8 @@
         <label class="modal__label">
           <span class="modal__input__title">Comment</span>
           <div class="modal__form__field">
-            <input
-              placeholder="Enter text"
-              type="text"
-              name="comment"
-              cols="30"
-              rows="10"
-              required
-              class="modal__form__input__comment"
-            />
+            <input placeholder="Enter text" type="text" name="comment" cols="30" rows="10" required
+              class="modal__form__input__comment" />
           </div>
         </label>
       </div>
