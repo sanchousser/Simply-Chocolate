@@ -24,11 +24,17 @@
     position: absolute;
     top: 24px;
     right: 24px;
+    background-color: transparent;
 }
 
 .modal__close__icon {
     width: 28px;
     height: 28px;
-    background-color: transparent;
     stroke: #111111;
+}
+
+.modal__close__icon:hover {
+    transform: scale(1.3);
+    stroke: #FD9222;
+    transition: 200ms;
 }
