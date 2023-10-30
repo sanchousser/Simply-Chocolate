@@ -24,7 +24,7 @@
   
 
   <script type="module" crossorigin src="/Simply-Chocolate/assets/index-a4de9f68.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-53b93648.css">
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-e56a2877.css">
 </head>
 
 <body>
@@ -159,7 +159,7 @@
     <div class="hero__content">
       <ul class="hero__list">
         <li class="hero__list__item">
-          <button type="button" class="hero__button buy" data-modal-open="">
+          <button type="button" class="hero__button buy" modal-button>
             Buy now
           </button>
         </li>
@@ -560,7 +560,9 @@
           />
           <img src="#" alt="Chocolate" class="sellers__image img2" />
         </picture>
-        <button type="button" class="sellers__button__mob">Buy now</button>
+        <button type="button" class="sellers__button__mob" modal-button>
+          Buy now
+        </button>
       </li>
       <li class="sellers__list__item">
         <picture>
@@ -579,7 +581,7 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button type="button" class="sellers__button" data-modal-open>
+      <button type="button" class="sellers__button" modal-button>
         Buy now
       </button>
     </div>
@@ -839,6 +841,25 @@
         </label>
       </div>
     </form>
+    <form>
+      <div class="modal__form">
+        <label class="modal__label">
+          <span class="modal__input__title">Comment</span>
+          <div class="modal__form__field">
+            <input
+              placeholder="Enter text"
+              type="text"
+              name="comment"
+              cols="30"
+              rows="10"
+              required
+              class="modal__form__input__comment"
+            />
+          </div>
+        </label>
+      </div>
+    </form>
+    <button type="button" class="modal__button">Submit</button>
   </div>
 </div>
 
