@@ -2,9 +2,9 @@
     transform: translate(-50%, -50%) scale(0);
 }
 
-.modal__close {
+/* .modal__close {
     margin-top: 14px;
-}
+} */
 
 .modal__title {
     text-align: center;
@@ -159,7 +159,7 @@ input::placeholder {
 }
 
 @media screen and (min-width:768px) {
-    .modal__close {
+    /* .modal__close {
         margin-top: 24px;
-    }
+    } */
 }
