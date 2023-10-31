@@ -23,8 +23,8 @@
 
   
 
-  <script type="module" crossorigin src="/Simply-Chocolate/assets/index-6dda8bf5.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-95a6cb0c.css">
+  <script type="module" crossorigin src="/Simply-Chocolate/assets/index-a6fb89b2.js"></script>
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-cc30a11b.css">
 </head>
 
 <body>
@@ -159,7 +159,7 @@
     <div class="hero__content">
       <ul class="hero__list">
         <li class="hero__list__item">
-          <button type="button" class="hero__button buy" modal-button>
+          <button type="button" class="hero__button buy " data-modal="1">
             Buy now
           </button>
         </li>
@@ -560,7 +560,7 @@
           />
           <img src="#" alt="Chocolate" class="sellers__image img2" />
         </picture>
-        <button type="button" class="sellers__button__mob" modal-button>
+        <button type="button" class="sellers__button__mob js-open-modal">
           Buy now
         </button>
       </li>
@@ -581,7 +581,7 @@
         called Cacao. Cacao has been around for thousands of years and was first
         discovered by the Native American tribe called the Mayans.
       </p>
-      <button type="button" class="sellers__button" modal-button>
+      <button type="button" class="sellers__button js-open-modal" data-modal="1">
         Buy now
       </button>
     </div>
@@ -736,9 +736,9 @@
   </div>
 </footer>
 
-  <div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button class="modal__close" data-modal-close>
+  <div class="backdrop is-hidden">
+  <div class="modal" data-modal="1">
+    <button class="modal__close js-modal-close">
       <svg class="modal__close__icon">
         <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-x-mobile"></use>
       </svg>
