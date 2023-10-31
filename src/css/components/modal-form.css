@@ -1,15 +1,35 @@
 .backdrop .is-hidden .modal {
     transform: translate(-50%, -50%) scale(0);
+    overflow-y: hidden;
 }
 
-/* .modal__close {
-    margin-top: 14px;
-} */
+.modal {
+    overflow-y: scroll;
+}
+
+.modal:hover {
+    overflow-y: scroll;
+}
+
+.modal::-webkit-scrollbar {
+    width: 7px;
+    background-color: var(--bgColor);
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: var(--hoverColor);
+    border-radius: 35px;
+}
+
+.modal__close {
+    padding-top: 24px;
+}
 
 .modal__title {
     text-align: center;
     margin-bottom: 32px;
     font-weight: 600;
+    padding-top: 24px;
 }
 
 .modal__buy {
@@ -28,6 +48,52 @@
     width: 160px;
     height: 196px;
     padding: 24px 20px 18px 20px;
+    transition: var(--animation);
+    cursor: pointer;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.modal__list__item:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--hoverColor);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: 15px;
+  }
+
+  .modal__list__item:hover:before, .modal__list__item:focus:before, .modal__list__item:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+.modal__list__item:hover,
+.modal__list__item:focus,
+.modal__list__item:active {
+    background-color: var(--hoverbgColor);
+    border: 1px solid var(--hoverColor);
 }
 
 .modal__list__button {
@@ -52,6 +118,10 @@
     margin-bottom: 18px;
 }
 
+.modal__form__input__info {
+    padding-left: 24px;
+}
+
 .name,
 .surname {
     background-color: transparent;
@@ -73,7 +143,7 @@ input::placeholder {
     color: rgba(64, 64, 64, 0.30);
     font-weight: 400;
     letter-spacing: -0.36px;
-    padding: 22px 24px;
+    padding: 22px 24px 22px 0px;
 }
 
 .modal__form__input {
@@ -84,6 +154,7 @@ input::placeholder {
     border-radius: 13px;
     border: 2px solid rgba(17, 17, 17, 0.05);
     cursor: pointer;
+    padding-left: 24px;
     
         &:focus {
             outline: none;
@@ -112,6 +183,7 @@ input::placeholder {
     background-color: transparent;
     margin-top: 8px;
     cursor: pointer;
+    padding-left: 24px;
 
     &:focus {
        outline: none;
@@ -126,18 +198,20 @@ input::placeholder {
     font-weight: 600;
     background-color: #FD9222;
     border-radius: 100px;
+    margin-bottom: 48px;
 }
 
 .modal__button:hover {
     background-color: #FCF1E0;
-    color: #FD9222;
+    color: var(--hoverColor);
     transition: var(--animation);
 }
 
 .modal__list__button:hover {
-    color: #FD9222;
+    color: var(--hoverColor);
     background-color: #000;
     transition: var(--animation);
+    transform: scale(1.1);
 }
 
 .swiper-pagination-bullet {
@@ -162,4 +236,5 @@ input::placeholder {
     /* .modal__close {
         margin-top: 24px;
     } */
+
 }

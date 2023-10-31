@@ -110,60 +110,13 @@
     padding: 8px 20px;
     
     transition: var(--animation);
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    -webkit-transition-property: color;
-    transition-property: color;
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
 }
 
-.products__item__price:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: var(--bgColor);
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 50% 100%;
-    transform-origin: 50% 100%;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-    border-radius: 100px;
-  }
-
-  .products__item__price:hover:before, .products__item__price:focus:before, .products__item__price:active:before {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition: var(--animation);
-  }
 
 .products__item__price:hover {
-    border: 1px solid var(--mainColor);
-    background-color: #FAFAFA;
+    background-color: var(--mainColor);
     color: var(--hoverColor);
-    -webkit-transform: scale(1.2);
     transform: scale(1.2);
-    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
-    transition: var(--animation);
 }
 
 .swiper-pagination-bullet {
