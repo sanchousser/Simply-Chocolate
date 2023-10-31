@@ -50,9 +50,6 @@
   overflow: hidden;
 }
 
-.ingredients__list__item picture {
-  margin-bottom: 36px;
-}
 
 .ingredients__section h4 {
   font-size: 14px;
@@ -63,7 +60,7 @@
 }
 
 .orange {
-  background-color: #fd9222;
+  background-color: var(--hoverColor);
   color: white;
 }
 
