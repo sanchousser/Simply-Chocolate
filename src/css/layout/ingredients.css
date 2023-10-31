@@ -50,6 +50,9 @@
   overflow: hidden;
 }
 
+.ingredients__list__item picture {
+  margin: 100px;
+}
 
 .ingredients__section h4 {
   font-size: 14px;
