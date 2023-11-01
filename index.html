@@ -24,7 +24,7 @@
   
 
   <script type="module" crossorigin src="/Simply-Chocolate/assets/index-e8323e77.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-2fb974bd.css">
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-a3b130ce.css">
 </head>
 
 <body>
@@ -742,19 +742,33 @@
       <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-x-mobile"></use>
     </svg>
   </button>
-  <h2 class="modal__title"><span class="modal__title--colored">BUY</span> NOW</h2>
+  <h2 class="modal__title">
+    <span class="modal__title--colored">BUY</span> NOW
+  </h2>
   <div class="swiper modal__swiper">
     <ul class="modal__swiper__list swiper-wrapper">
       <li class="modal__list__item swiper-slide">
-        <img srcset="/Simply-Chocolate/assets/img-1-74df8898.png 1x, /Simply-Chocolate/assets/img-1@2x-bca2bb66.png 2x" src="#" alt="chocolate slice" />
+        <img
+          srcset="/Simply-Chocolate/assets/img-1-74df8898.png 1x, /Simply-Chocolate/assets/img-1@2x-bca2bb66.png 2x"
+          src="#"
+          alt="chocolate slice"
+        />
         <button type="button" class="modal__list__button">100 g</button>
       </li>
       <li class="modal__list__item swiper-slide">
-        <img srcset="/Simply-Chocolate/assets/img-2-45c01f36.png 1x, /Simply-Chocolate/assets/img-2@2x-5cf9cf33.png 2x" src="#" alt="white chocolate" />
+        <img
+          srcset="/Simply-Chocolate/assets/img-2-45c01f36.png 1x, /Simply-Chocolate/assets/img-2@2x-5cf9cf33.png 2x"
+          src="#"
+          alt="white chocolate"
+        />
         <button type="button" class="modal__list__button">200 g</button>
       </li>
       <li class="modal__list__item swiper-slide">
-        <img srcset="/Simply-Chocolate/assets/img-3-bd6e94d3.png 1x, /Simply-Chocolate/assets/img-3@2x-038efe05.png 2x" src="#" alt="milk chocolate" />
+        <img
+          srcset="/Simply-Chocolate/assets/img-3-bd6e94d3.png 1x, /Simply-Chocolate/assets/img-3@2x-038efe05.png 2x"
+          src="#"
+          alt="milk chocolate"
+        />
         <button type="button" class="modal__list__button">300 g</button>
       </li>
     </ul>
@@ -770,36 +784,66 @@
     </label>
     <label class="modal__label">
       <span class="modal__input__title">Email</span>
-      <input placeholder="Enter your email" type="email" class="modal__form__input" />
+      <input
+        placeholder="Enter your email"
+        type="email"
+        class="modal__form__input"
+      />
     </label>
     <label class="modal__label">
       <span class="modal__input__title">Phone number</span>
       <div class="modal__phone-thumb">
-        <svg>
-          <use></use>
-        </svg>
-        <span>+380</span>
-        <input placeholder="Phone number" type="tel" class="modal__form__input" />
+        <div class="modal__phone-content">
+          <span class="phone__text">+380</span>
+          <svg class="phone__icon">
+            <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-Ukraine"></use>
+          </svg>
+        </div>
+        <input
+          placeholder="Phone number"
+          type="tel"
+          class="modal__form__input input__phone"
+        />
       </div>
     </label>
     <label class="modal__label">
       <span class="modal__input__title">Card number</span>
       <div class="modal__form__field">
-        <input placeholder="Enter card" type="number" class="modal__form__input" />
-        <svg>
-          <use></use>
-        </svg>
+        <div class="modal__card__thumb">
+          <input
+            placeholder="Enter card"
+            type="number"
+            class="modal__form__input"
+          />
+          <svg class="card__icon">
+            <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-Mastercard"></use>
+          </svg>
+        </div>
       </div>
     </label>
     <label class="modal__label">
       <span class="modal__input__title">Comment</span>
-      <textarea placeholder="Enter text" type="text" name="comment" cols="30" rows="10" required
-        class="modal__form__input__comment"></textarea>
+      <textarea
+        placeholder="Enter text"
+        type="text"
+        name="comment"
+        cols="30"
+        rows="10"
+        required
+        class="modal__form__input__comment"
+      ></textarea>
     </label>
-    <button type="button" class="modal__button js-modal-close js-open-modal" data-modal="3">Submit</button>
+    <button
+      type="button"
+      class="modal__button js-modal-close js-open-modal"
+      data-modal="3"
+    >
+      Submit
+    </button>
   </form>
 </div>
 <div class="overlay js-overlay-modal"></div>
+
 
 
 
