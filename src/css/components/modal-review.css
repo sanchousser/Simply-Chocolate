@@ -1,0 +1,23 @@
+.review__modal {
+    width: 311px;
+    height: 70vh;
+    overflow-y: hidden;
+    margin: 0 auto;
+    padding: 32px 24px;
+    border-radius: 15px;
+    background-color: var(--basicColor);
+    transition: var(--animation);
+}
+.review__modal__title {
+    color: var(--mainColor);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+    max-width: 255px;
+}
+
+.review__modal__title--colored {
+    color: var(--hoverColor);
+}

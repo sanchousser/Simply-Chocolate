@@ -35,6 +35,7 @@ const modalSwiper = new Swiper('.modal__swiper', {
     speed: 800,
     mousewheel: {
       invert: true,
+      sensitivity: 0.2,
     },
     keyboard: {
       enabled: true,

@@ -44,7 +44,14 @@
           <use></use>
         </svg>
         <span>+380</span>
-        <input placeholder="Phone number" type="tel" class="modal__form__input" />
+        <input
+        placeholder="Phone number" 
+        type="tel" 
+        pattern="[0-9]{3} [0-9]{3} [0-9]{4}" 
+        minlength="9" 
+        maxlength="12"
+        title="+380 000 000 000" 
+        class="modal__form__input" required />
       </div>
     </label>
     <label class="modal__label">
