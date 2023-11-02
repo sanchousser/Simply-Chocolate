@@ -35,6 +35,7 @@ const reviewSwiper = new Swiper('.review__swiper', {
     speed: 800,
     mousewheel: {
       invert: true,
+      sensitivity: 0.2,
     },
     keyboard: {
       enabled: true,

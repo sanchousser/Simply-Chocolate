@@ -205,8 +205,10 @@ textarea::placeholder {
     border: 2px solid rgba(17, 17, 17, 0.05);
     cursor: pointer;
     padding-left: 24px;
-    color: #000;
-    font-size: 14px;
+    color: var(--hoverColor);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    font-size: 18px;
 
     &:focus {
         outline: none;
@@ -225,12 +227,18 @@ textarea::placeholder {
     cursor: pointer;
     margin-top: 8px;
     padding: 22px 24px 22px 24px;
+    color: var(--hoverColor);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    font-size: 18px;
+
 
     &:focus {
         outline: none;
         border-color: var(--hoverColor);
     }
 }
+  
 
 .input__phone {
     padding-left: 106px;
