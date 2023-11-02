@@ -1,6 +1,6 @@
 .review__modal {
     width: 311px;
-    height: 70vh;
+    height: 471px;
     overflow-y: hidden;
     margin: 0 auto;
     padding: 32px 24px;
@@ -8,6 +8,7 @@
     background-color: var(--basicColor);
     transition: var(--animation);
 }
+
 .review__modal__title {
     color: var(--mainColor);
     font-size: 20px;
@@ -15,9 +16,175 @@
     line-height: 120%;
     letter-spacing: -0.6px;
     text-transform: uppercase;
-    max-width: 255px;
+    width: 255px;
+    margin-bottom: 32px;
 }
 
 .review__modal__title--colored {
     color: var(--hoverColor);
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.modal-review__close-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    padding: 0;
+    border: none;
+    background: transparent;
+
+}
+
+.modal-review__close__icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--mainColor);
+    transition: all var(--animation);
+}
+
+.modal-review__close-btn:hover .modal-review__close__icon,
+.moda-review__close-btn:focus .modal-review__close__icon {
+    stroke: var(--hoverColor);
+    transform: scale(1.3);
+}
+
+.modal__review-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-review__form__input {
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    cursor: pointer;
+    padding-left: 24px;
+    color: var(--hoverColor);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+        border-color: var(--hoverColor);
+    }
+}
+
+.review-input__phone {
+    background-color: transparent;
+    margin-top: 0px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    cursor: pointer;
+    padding-left: 14px;
+    color: var(--hoverColor);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    font-size: 14px;
+
+    &:focus {
+        outline: none;
+        border-color: var(--hoverColor);
+    }
+}
+
+.review-input__phone::placeholder {
+    padding-left: 88px;
+}
+
+.modal-review__label {
+    margin-bottom: 14px;
+}
+
+.modal-review__form__input__comment {
+    width: 100%;
+    height: 91px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 2px solid rgba(17, 17, 17, 0.05);
+    background-color: transparent;
+    cursor: pointer;
+    padding: 14px 18px 60px 18px;
+    color: var(--hoverColor);
+    font-weight: 400;
+    letter-spacing: -0.36px;
+    font-size: 14px;
+
+
+    &:focus {
+        outline: none;
+        border-color: var(--hoverColor);
+    }
+}
+
+.modal-review__button {
+
+    padding: 12px 28px;
+    color: #FFF;
+    font-weight: 600;
+    background-color: var(--hoverColor);
+    border-radius: 100px;
+
+}
+
+.modal-review__button-div {
+    padding-bottom: 32px;
+}
+
+.modal-review__button:hover {
+    background-color: var(--bgColor);
+    color: var(--hoverColor);
+}
+
+@media screen and (min-width:768px) {
+
+    .review__modal__title {
+        padding-left: 16px;
+        padding-top: 8px;
+        font-size: 24px;
+        line-height: 116.667%;
+        letter-spacing: -0.72px;
+    }
+
+    .modal-review__close-btn {
+        padding-top: 24px;
+        padding-right: 24px;
+    }
+
+    .review__modal {
+        width: 517px;
+        height: 631px;
+    }
+
+    .modal-review__form__input {
+        padding: 22px 24px;
+        border-radius: 13px;
+        height: 66px;
+    }
+
+    .review-input__phone {
+        padding: 22px 24px;
+        border-radius: 13px;
+        height: 66px;
+    }
+
+    .modal-review__form__input__comment {
+        height: 137px;
+    }
+    
+    .review-input__phone::placeholder {
+        padding-left: 153px;
+    }
+
+    .modal-review__button {
+        padding: 14px 40px;
+    }
 }
