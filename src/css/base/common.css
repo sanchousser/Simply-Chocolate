@@ -59,3 +59,11 @@ button {
     background-color: var(--hoverColor);
     border-radius: 20px;
 }
+
+input:focus:valid {
+    background-color: #b2f3b2;
+  }
+  
+  input:focus:invalid {
+    background-color: lightpink;
+  }
