@@ -178,10 +178,12 @@
 
     .modal-review__form__input__comment {
         height: 137px;
+
     }
     
     .review-input__phone::placeholder {
         padding-left: 153px;
+        border-radius: 13px;
     }
 
     .modal-review__button {
