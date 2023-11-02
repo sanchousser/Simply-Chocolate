@@ -45,20 +45,20 @@
     </ul>
     <div class="swiper-pagination"></div>
   </div>
-  <form class="modal__form">
+  <form class="modal__form" action="">
     <label class="modal__label">
       <span class="modal__input__title">Personal information</span>
       <div class="modal__form__field modal__form__field__info">
         <input 
         placeholder="Name" 
         type="text" 
-        class="modal__form__input"
+        class="modal__form__input input-js"
         pattern="\w{2,25}"
         required/>
         <input 
         placeholder="Surname" 
         type="text" 
-        class="modal__form__input" 
+        class="modal__form__input input-js" 
         required
         pattern="\w{2,25}"
         />
@@ -69,7 +69,7 @@
       <input
         placeholder="Enter your email"
         type="email"
-        class="modal__form__input"
+        class="modal__form__input input-js"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
         required
       />
@@ -86,7 +86,7 @@
         <input
           placeholder="Phone number"
           type="tel"
-          class="modal__form__input input__phone"
+          class="modal__form__input input__phone input-js"
           required
           pattern="\d{8,8}"
         />
@@ -99,7 +99,7 @@
           <input
             placeholder="Enter card"
             type="number"
-            class="modal__form__input"
+            class="modal__form__input input-js"
             required
             pattern="\d{8,8}"
           />
@@ -122,8 +122,8 @@
       ></textarea>
     </label>
     <button
-      type="button"
-      class="modal__button js-modal-close js-open-modal"
+      type="submit"
+      class="modal__button js-modal-close js-open-modal button-js"
       data-modal="3"
     >
       Submit
