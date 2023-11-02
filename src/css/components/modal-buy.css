@@ -58,6 +58,7 @@
 
 .modal__swiper {
     padding-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .modal__list__item {
@@ -125,7 +126,6 @@
 .modal__list__item img {
     width: 167px;
     height: 148px;
-    margin-bottom: 16px;
 }
 
 .modal__list__button {
@@ -141,6 +141,8 @@
     color: #000;
     line-height: 18px;
     font-weight: 500;
+    font-size: 12px;
+    line-height: -0.24px;
 }
 
 /* .personal__info {
@@ -174,15 +176,14 @@
 }
 
 input::placeholder {
-    font-size: 18px;
+    font-size: 14px;
     color: rgba(64, 64, 64, 0.30);
     font-weight: 400;
-    letter-spacing: -0.36px;
-    padding: 22px 24px 22px 0px;
+    letter-spacing: -0.28px;
 }
 
 textarea::placeholder {
-    font-size: 18px;
+    font-size: 14px;
     color: rgba(64, 64, 64, 0.30);
     font-weight: 400;
     letter-spacing: -0.36px;
@@ -218,6 +219,8 @@ textarea::placeholder {
 .modal__form__input__comment {
     width: 100%;
     height: 137px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
     border-radius: 13px;
     border: 2px solid rgba(17, 17, 17, 0.05);
     background-color: transparent;
@@ -237,9 +240,56 @@ textarea::placeholder {
 }
   
 
+.input__phone {
+    padding-left: 106px;
+}
+
+.modal__phone-thumb {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.modal__phone-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8px;
+    position: absolute;
+    padding-left: 18px;
+    border-right: 2px rgba(17, 17, 17, 0.05) solid;
+    padding-right: 8px;
+}
+
+.phone__text {
+    color: #000;
+    font-weight: 500;
+}
+
+.phone__icon {
+    width: 24px;
+    height: 18px;
+}
+
+.modal__card__thumb {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.card__icon {
+    width: 32px;
+    height: 21px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 24px;
+}
+
 .modal__button {
     margin-top: 18px;
-    padding: 14px 40px;
+    padding: 12px 28px;
     color: #FFF;
     font-weight: 600;
     background-color: var(--hoverColor);
@@ -260,15 +310,66 @@ textarea::placeholder {
     transform: scale(1.1);
 }
 
-@media screen and (min-width:768px) {
-    /* .modal__close {
-        margin-top: 24px;
-    } */
+/* Tablet */
 
+@media screen and (min-width:768px) {
     .buy-modal {
         width: 609px;
         height: 95vh;
+    }
 
+    .modal__list__item {
+        width: 160px;
+        height: 196px;
+    }
+        
+    .modal__input__title {
+        font-size: 14px;
+        line-height: -0.28px;
+    }
+
+    .modal__form__input {
+        font-size: 18px;
+    }
+
+    .input__phone {
+        padding-left: 177px;
+    }
+
+    .modal__phone-content {
+        gap: 18px;
+        border-right: 3px rgba(17, 17, 17, 0.05) solid;
+        padding-right: 32px;
+    }
+
+    .phone__text {
+        color: #000;
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: -0.36px;
+    }
+
+    .phone__icon {
+        width: 32px;
+        height: 24px;
+    }
+
+    .card__icon {
+        width: 44px;
+        height: 30px;
+    }
+
+    input::placeholder {
+        font-size: 18px;
+        color: rgba(64, 64, 64, 0.30);
+        font-weight: 400;
+        letter-spacing: -0.36px;
+        padding: 22px 24px 22px 0px;
+    }
+
+    textarea::placeholder {
+        font-size: 18px;
+        letter-spacing: -0.36px;
     }
 
     .modal__form__field__info {
@@ -277,4 +378,7 @@ textarea::placeholder {
         gap: 21px;
     }
 
+    .modal__button {
+        padding: 14px 40px;
+    }
 }
