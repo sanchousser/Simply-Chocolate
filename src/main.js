@@ -4,4 +4,4 @@ import "./js/mobile-menu";
 import "./js/review-slider";
 import "./js/modal";
 import "./js/modal-slider";
-import "./js/form-validation";
+// import "./js/form-validation";
