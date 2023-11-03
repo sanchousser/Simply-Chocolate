@@ -3,7 +3,7 @@
     height: 350px;
     padding: 84px 24px 84px 68px;
     border-radius: 15px;
-    background-color: #FD9222;
+    background-color: var(--hoverColor);
     overflow: hidden;
 }
 
@@ -14,12 +14,15 @@
     border-radius: 50%;
     background-color: #FCF1E0;
     padding: 6px 6px 4px 6px;
+    stroke: var(--hoverColor);
+    color: var(--hoverColor);
+    transition: all var(--animation);
 }
 
 .buy-pop-up__close-icon {
     width: 16px;
     height: 16px;
-    stroke: #F16529;
+    stroke: var(--hoverColor);
 }
 
 .buy-pop-up__title {
@@ -57,7 +60,7 @@
 }
 
 .buy-pop-up__close-btn:hover {
-    background-color: transparent;
+    background: transparent;
 }
 
 /* Tablet + desktop */
