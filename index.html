@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-</html>
-
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />   
-  <link rel="icon" type="image/svg+xml" href="/Simply-Chocolate/favicon.svg"/>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/Simply-Chocolate/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Simply Chocolate</title>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
   
 
-  <script type="module" crossorigin src="/Simply-Chocolate/assets/index-3f58ea99.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-58669d2c.css">
+  <script type="module" crossorigin src="/Simply-Chocolate/assets/index-96741365.js"></script>
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-aaaee836.css">
 </head>
 
 <body>
@@ -457,49 +453,49 @@
                     <img src="/Simply-Chocolate/assets/orange-01c90634.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">ORANGE</h3>
                     <p class="products__item__text">Dark chocolate</p>
-                    <button class="products__item__price">45 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">45 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/apple-0295eeb1.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">APPLE&CRANBERRY</h3>
                     <p class="products__item__text">Milk chocolate</p>
-                    <button class="products__item__price">50 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">50 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/lime-061b828a.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">LIME&SEA SALT</h3>
                     <p class="products__item__text">Dark chocolate</p>
-                    <button class="products__item__price">66 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">66 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/pineapple-6bf05d89.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">PINEAPPLE</h3>
                     <p class="products__item__text">Dark chocolate</p>
-                    <button class="products__item__price">54 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">54 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/classic-milk-636df97e.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">CLASSIC</h3>
                     <p class="products__item__text">Milk chocolate</p>
-                    <button class="products__item__price">45 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">45 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/honey-b84e77e5.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">HONEY</h3>
                     <p class="products__item__text">Milk chocolate</p>
-                    <button class="products__item__price">50 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">50 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/roasted-fruits-266ec0f1.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">ROASTED FRUITS</h3>
                     <p class="products__item__text">Dark chocolate</p>
-                    <button class="products__item__price">66 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">66 UAH</button>
                 </li>
                 <li class="products__item swiper-slide">
                     <img src="/Simply-Chocolate/assets/classic-white-2d132df9.png" class="products__item__img" alt="chocolate">
                     <h3 class="products__item__title">CLASSIC</h3>
                     <p class="products__item__text">White chocolate</p>
-                    <button class="products__item__price">54 UAH</button>
+                    <button class="products__item__price js-open-modal" data-modal="1">54 UAH</button>
                 </li>
             </ul>
             <div class="swiper-pagination"></div>
@@ -813,7 +809,7 @@
           type="tel"
           class="modal__form__input input__phone input-js"
           required
-          pattern="\d{8,8}"
+          pattern="\d{9,9}"
         />
       </div>
     </label>
@@ -889,12 +885,23 @@
             <textarea placeholder="Enter text" type="text" name="comment" cols="20" rows="10" required
                 class="modal-review__form__input__comment"></textarea>
         </label>
-        <div class="modal-review__button-div">
+
             <button type="button" class="modal-review__button js-modal-close js-open-modal" data-modal="4">
                 Send
             </button>
-        </div>
+
+
     </form>
+</section>
+<div class="overlay js-overlay-modal"></div>
+  <section class="thanks-review modal" data-modal="4">
+    <button class="modal-review__close-btn js-modal-close">
+        <svg class="modal-review__close__icon thanks-review__btn">
+            <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-x-mobile"></use>
+        </svg>
+    </button>
+    <h2 class="thanks-review__title">thank you for your feedback!</h2>
+    <p class="thanks-review__description">We are so happy to hear from you!</p>
 </section>
 <div class="overlay js-overlay-modal"></div>
 
@@ -902,9 +909,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   
-  
+
 
 </body>
 
 </html>
-
