@@ -259,6 +259,7 @@ textarea::placeholder {
     padding-left: 18px;
     border-right: 2px rgba(17, 17, 17, 0.05) solid;
     padding-right: 8px;
+    margin-top: 5px;
 }
 
 .phone__text {

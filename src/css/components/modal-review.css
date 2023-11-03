@@ -126,18 +126,24 @@
 }
 
 .modal-review__button {
-
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     padding: 12px 28px;
     color: #FFF;
     font-weight: 600;
     background-color: var(--hoverColor);
     border-radius: 100px;
+    width: 93px;
+    height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.modal-review__button-div {
+/* .modal-review__button-div {
     padding-bottom: 32px;
-}
+} */
 
 .modal-review__button:hover {
     background-color: var(--bgColor);
