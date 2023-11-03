@@ -113,7 +113,7 @@
 }
 
 
-.products__item__price:hover {
+.products__item:hover .products__item__price {
     background-color: var(--mainColor);
     color: var(--hoverColor);
     transform: scale(1.2);
