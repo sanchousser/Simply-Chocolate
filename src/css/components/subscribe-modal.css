@@ -41,6 +41,10 @@
     }
   }
   
+  .span-title {
+    color: var(--hoverColor );
+  }
+
   .submit-modal__form {
     display: flex;
   
