@@ -41,6 +41,11 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 13px;
   margin-bottom: 22px;
+  transition: 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.advantages__icon:hover, .advantages__list__item:first-child:hover .advantages__first-icon, .advantages__list__item:nth-child(2):hover .advantages__second-icon, .advantages__list__item:last-child:hover .advantages__third-icon {
+  transform: rotate(1turn);
 }
 
 /* Tablet */

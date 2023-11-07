@@ -35,10 +35,10 @@ const productsSwiper = new Swiper('.products__swiper', {
     speed: 800,
     mousewheel: {
       invert: true,
+      sensitivity: 0.2,
     },
     keyboard: {
       enabled: true,
       onlyInViewport: false,
-      sensitivity: 0.01,
     },
   });

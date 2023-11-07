@@ -44,3 +44,26 @@ button {
     font-weight: 600;
     line-height: normal;
 }
+
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    background-color: rgba(17, 17, 17, 0.7);
+    transition: var(--animation);
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    background-color: var(--hoverColor);
+    border-radius: 20px;
+}
+
+input:focus:valid {
+    background-color: #b2f3b2;
+  }
+  
+  input:focus:invalid {
+    background-color: lightpink;
+  }

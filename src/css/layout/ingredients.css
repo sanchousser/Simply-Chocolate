@@ -48,10 +48,15 @@
   overflow: hidden;
 }
 
+
 .ingredients_image {
   display: flex;
   justify-content: center;
   margin-bottom: 25px;
+}
+.ingredients__list__item picture {
+  margin: 100px;
+
 }
 
 .ingredients__section h4 {
