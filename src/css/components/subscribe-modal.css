@@ -1,24 +1,175 @@
-.subscribe__modal__backdrop {
-}
-.is-hidden-subscribe {
-}
-.subscribe__modal__first-container {
-}
-.subscribe__modal__container {
-}
-.subscribe__modal__img {
-}
-.subscribe__modal__btn__close {
-}
-.subscribe__modal__close__icon {
-}
-.subscribe__modal__title {
-}
-.subscribe__span-title {
-}
-.subscribe__modal__form {
-}
-.subscribe-modal__input {
-}
-.subscribe__modal__btn {
-}
+.submit-modal {
+    width: 311px;
+    height: 350px;
+  
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  
+    overflow: auto;
+    border-radius: 15px;
+    background: #FAFAFA;
+    z-index: 666;
+  
+    @media screen and (min-width: 768px) {
+      width: 538px;
+      height: 412px;
+      padding-bottom: 40px;
+    }
+  }
+  
+  .submit-modal__title {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.6px;
+    text-transform: uppercase;
+  
+    margin-top: 32px;
+    margin-bottom: 24px;
+    margin-left: 24px;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.72px;
+  
+      margin-top: 40px;
+      margin-bottom: 28px;
+      margin-left: 40px;
+    }
+  }
+  
+  .submit-modal__form {
+    display: flex;
+  
+    margin-left: 24px;
+  
+    @media screen and (min-width: 768px) {
+      align-items: center;
+  
+      margin-left: 40px;
+    }
+  }
+  
+  .submit-modal__input {
+    position: relative;
+    padding: 14px 18px;
+    padding-right: 120px;
+    border-radius: 25px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    width: 263px;
+    font-weight: 700;
+  
+    box-shadow: 0px 5.444915294647217px 5.444915294647217px 0px
+      rgba(0, 0, 0, 0.03);
+  
+    outline: transparent;
+    transition: all 350ms cubic-bezier(0.4, 0, 0.2, 1) 50ms;
+  
+    @media screen and (min-width: 768px) {
+      padding: 14px 24px;
+      border-radius: 30px;
+      width: 313px;
+    }
+  }
+  
+  .submit-modal__input:hover,
+  .submit-modal__input:focus {
+    box-shadow: none;
+    transform: none;
+    border: 1px solid var(--hoverbgColor);
+  }
+  
+  .submit-modal__input:focus {
+    background-color: var(--hoverColor);
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
+  }
+  
+  .submit-modal__input::placeholder {
+    color: rgba(64, 64, 64, 0.3);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.28px;
+  
+    @media screen and (min-width: 768px) {
+      font-size: 18px;
+      letter-spacing: -0.36px;
+    }
+  }
+  
+  .submit-modal__btn {
+    position: absolute;
+    right: 24px;
+    top: 275px;
+  
+    padding: 14px 28px;
+    border-radius: 100px;
+    background-color: var(--hoverColor);
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+  
+    transition: all 350ms ease-in-out 50ms;
+  
+    @media screen and (min-width: 768px) {
+      padding: 17px 40px;
+      right: 40px;
+      top: 320px;
+    }
+  }
+  
+  .submit-modal__btn:hover,
+  .submit-modal__btn:focus {
+    color: var(--hoverbgColor);
+    transform: scale(1.02);
+    background-color: var(--bgColor);
+  }
+  
+  .submit-modal__btn-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    position: absolute;
+    top: 15px;
+    right: 14px;
+  
+    border: none;
+    background-color: transparent;
+    stroke: var(--basicColor);
+    padding: 8px;
+  
+    transition: all 350ms ease-in-out 50ms;
+  
+    @media screen and (min-width: 768px) {
+      top: 24px;
+      right: 24px;
+    }
+  }
+  
+  .submit-modal__btn-close:hover,
+  .submit-modal__btn-close:focus {
+    background-color: var(--hoverColor);
+    border-radius: 50%;
+  }
+  
+  .submit-modal__close-icon {
+    width: 24px;
+    height: 24px;
+  
+    transition: all 350ms ease-in-out 50ms;
+  
+    @media screen and (min-width: 768px) {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  .submit-modal__btn-close:hover .submit-modal__close-icon,
+  .submit-modal__btn-close:focus .submit-modal__close-icon {
+    stroke: var(--mainColor);
+    transform: scale(1.1);
+  }
