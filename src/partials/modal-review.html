@@ -1,41 +1,62 @@
-<section class="review__modal modal" data-modal="2">
-    <h2 class="review__modal__title">leave a review
-        about<span class="review__modal__title--colored"> our chocolate</span>
-    </h2>
-    <button class="modal-review__close-btn js-modal-close">
-        <svg class="modal-review__close__icon">
-            <use href="./img/icons/symbol-defs.svg#icon-x-mobile"></use>
-        </svg>
+<section class="review__modal modal" data-modal="2" id="review-modal-form">
+  <h2 class="review__modal__title">
+    leave a review about<span class="review__modal__title--colored">
+      our chocolate</span
+    >
+  </h2>
+  <button class="modal-review__close-btn js-modal-close">
+    <svg class="modal-review__close__icon">
+      <use href="./img/icons/symbol-defs.svg#icon-x-mobile"></use>
+    </svg>
+  </button>
+  <form class="modal__review-form">
+    <label class="modal-review__label">
+      <input
+        placeholder="Name"
+        type="text"
+        class="modal-review__form__input"
+        pattern="\w{2,25}"
+        required
+      />
+    </label>
+    <label class="modal__label">
+      <input
+        placeholder="Enter your email"
+        type="email"
+        class="modal-review__form__input"
+        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+      />
+    </label>
+    <label class="modal-review__label">
+      <div class="modal__phone-thumb">
+        <div class="modal__phone-content">
+          <span class="phone__text">+380</span>
+          <svg class="phone__icon">
+            <use href="./img/icons/symbol-defs.svg#icon-Ukraine"></use>
+          </svg>
+        </div>
+        <input
+          placeholder="Phone number"
+          type="tel"
+          class="review-input__phone"
+          pattern="\d{8,8}"
+        />
+      </div>
+    </label>
+    <label class="modal-review__label">
+      <textarea
+        placeholder="Enter text"
+        type="text"
+        name="comment"
+        cols="20"
+        rows="10"
+        class="modal-review__form__input__comment"
+      ></textarea>
+    </label>
+
+    <button type="submit" class="modal-review__button" id="js-review-modal">
+      Send
     </button>
-    <form class="modal__review-form">
-        <label class="modal-review__label">
-            <input placeholder="Name" type="text" class="modal-review__form__input" pattern="\w{2,25}" required />
-        </label>
-        <label class="modal__label">
-            <input placeholder="Enter your email" type="email" class="modal-review__form__input"
-                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
-        </label>
-        <label class="modal-review__label">
-            <div class="modal__phone-thumb">
-                <div class="modal__phone-content">
-                    <span class="phone__text">+380</span>
-                    <svg class="phone__icon">
-                        <use href="./img/icons/symbol-defs.svg#icon-Ukraine"></use>
-                    </svg>
-                </div>
-                <input placeholder="Phone number" type="tel" class="review-input__phone" required pattern="\d{8,8}" />
-            </div>
-        </label>
-        <label class="modal-review__label">
-            <textarea placeholder="Enter text" type="text" name="comment" cols="20" rows="10" required
-                class="modal-review__form__input__comment"></textarea>
-        </label>
-
-            <button type="button" class="modal-review__button js-modal-close js-open-modal" data-modal="4">
-                Send
-            </button>
-
-
-    </form>
+  </form>
 </section>
 <div class="overlay js-overlay-modal"></div>
