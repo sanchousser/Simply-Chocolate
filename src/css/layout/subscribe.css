@@ -45,7 +45,7 @@
 
 .subscribe__button {
   border-radius: 100px;
-  background: #fd9222;
+  background: var(--hoverColor);
   color: #fff;
   text-align: center;
   font-family: Montserrat;
@@ -56,6 +56,12 @@
   letter-spacing: -0.28px;
   padding: 14px 40px;
   border: none;
+  transition: var(--animation);
+}
+
+.subscribe__button:hover {
+  background-color: var(--hoverbgColor);
+  color: var(--hoverColor);
 }
 
 /* Tablet */
@@ -72,6 +78,13 @@
 
   .subscribe__text {
     width: 467px;
+  }
+
+  .subscribe__button {
+    font-size: 18px;
+    font-weight: 600;
+    height: 50px;
+    width: 172px;
   }
 }
 

@@ -1,0 +1,51 @@
+<div class="modal submit-modal" data-modal="5">
+  <div class="submit-modal__container">
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+        /img/subscribe-modal/chocolate-pop-up-desktop.jpg    1x,
+        /img/subscribe-modal/chocolate-pop-up-desktop@2x.jpg 2x
+        "
+      />
+      <source
+      media="(min-width: 768px)"
+      srcset="
+      /img/subscribe-modal/chocolate-pop-up-tablet.jpg    1x,
+      /img/subscribe-modal/chocolate-pop-up-tablet@2x.jpg 2x
+      "
+    />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+        /img/subscribe-modal/chocolate-pop-up-mobile.jpg    1x,
+        /img/subscribe-modal/chocolate-pop-up-mobile@2x.jpg 2x
+        "
+      />
+      <img
+        src="/img/pop-up/mobile/pop-up-mobile.jpg"
+        alt="pop-up"
+        class="submit-modal__img"
+      />
+    </picture>
+    <button class="submit-modal__btn-close js-modal-close">
+      <svg class="submit-modal__close-icon">
+        <use href="/img/icons/symbol-defs.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="submit-modal__title">
+      Explore our <br /><span class="span-title">new chocolate</span> first!
+    </h2>
+    <form class="submit-modal__form">
+      <input
+        type="text"
+        placeholder="Enter your email"
+        name="submit-modal__name"
+        class="submit-modal__input"
+        data-min-length="8"
+        data-max-length="30"
+      />
+      <button type="submit" class="submit-modal__btn js-modal-close">Submit</button>
+    </form>
+  </div>
+</div>

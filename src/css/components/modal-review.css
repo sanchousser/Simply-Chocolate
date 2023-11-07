@@ -83,20 +83,25 @@
     border-radius: 8px;
     border: 2px solid rgba(17, 17, 17, 0.05);
     cursor: pointer;
-    padding-left: 14px;
-    color: var(--hoverColor);
-    font-weight: 400;
-    letter-spacing: -0.36px;
-    font-size: 14px;
+    color: var(--mainColor);
 
-    &:focus {
-        outline: none;
-        border-color: var(--hoverColor);
-    }
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+
+
 }
 
+.review-input__phone:focus {
+    outline: none;
+    border-color: var(--hoverColor);
+    padding-left: 188px;
+}
+
+
 .review-input__phone::placeholder {
-    padding-left: 88px;
+    padding-left: 188px;
 }
 
 .modal-review__label {
@@ -186,7 +191,7 @@
         height: 137px;
 
     }
-    
+
     .review-input__phone::placeholder {
         padding-left: 153px;
         border-radius: 13px;
