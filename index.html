@@ -16,7 +16,7 @@
   
 
   <script type="module" crossorigin src="/Simply-Chocolate/assets/index-96741365.js"></script>
-  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-8bc4d09d.css">
+  <link rel="stylesheet" href="/Simply-Chocolate/assets/index-bbc54fcf.css">
 </head>
 
 <body>
@@ -695,7 +695,7 @@
     finest ingredients and handcrafted with the utmost care, each piece is a
     work of art that is sure to please.
   </p>
-  <button class="subscribe__button" modal-button>Subscribe</button>
+  <button class="subscribe__button js-open-modal" data-modal="5">Subscribe</button>
 </section>
 
   <!-- Footer -->
@@ -935,7 +935,6 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
-
   <div class="buy__pop-up modal" data-modal="4">
   <button type="button" class="buy-pop-up__close-btn js-modal-close">
     <svg class="buy-pop-up__close-icon">
@@ -963,11 +962,55 @@
 </div>
 <div class="overlay js-overlay-modal"></div>
 
+  <div class="modal submit-modal" data-modal="5">
+  <div class="submit-modal__container">
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="/Simply-Chocolate/assets/chocolate-pop-up-desktop-645491e6.jpg 1x, /Simply-Chocolate/assets/chocolate-pop-up-desktop@2x-5527f2a1.jpg 2x"
+      />
+      <source
+      media="(min-width: 768px)"
+      srcset="/Simply-Chocolate/assets/chocolate-pop-up-desktop-645491e6.jpg 1x, /Simply-Chocolate/assets/chocolate-pop-up-desktop@2x-5527f2a1.jpg 2x"
+    />
+      <source
+        media="(max-width: 767px)"
+        srcset="/Simply-Chocolate/assets/chocolate-pop-up-mobile-3f0ff93d.jpg 1x, /Simply-Chocolate/assets/chocolate-pop-up-mobile@2x-a0ad4092.jpg 2x"
+      />
+      <img
+        src="/img/pop-up/mobile/pop-up-mobile.jpg"
+        alt="pop-up"
+        class="submit-modal__img"
+      />
+    </picture>
+    <button class="submit-modal__btn-close js-modal-close">
+      <svg class="submit-modal__close-icon">
+        <use href="/Simply-Chocolate/assets/symbol-defs-29e29241.svg#icon-x"></use>
+      </svg>
+    </button>
+    <h2 class="submit-modal__title">
+      Explore our <br /><span class="span-title">new chocolate</span> first!
+    </h2>
+    <form class="submit-modal__form">
+      <input
+        type="text"
+        placeholder="Enter your email"
+        name="submit-modal__name"
+        class="submit-modal__input"
+        data-min-length="8"
+        data-max-length="30"
+      />
+      <button type="submit" class="submit-modal__btn js-modal-close">Submit</button>
+    </form>
+  </div>
+</div>
+
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/1784d45167.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   
 
 
