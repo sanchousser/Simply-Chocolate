@@ -14,7 +14,6 @@
 @import url('./base/section.css');
 @import url('./base/common.css');
 
-
 /* layout */
 @import url('./layout/header.css');
 @import url('./layout/hero.css');
@@ -31,7 +30,10 @@
 
 @import url('./components/mobile-menu.css');
 @import url('./components/backdrop.css');
+@import url('./components/subscribe-modal.css');
+
 @import url('./components/modal-buy.css');
 @import url('./components/buy-pop-up.css');
 @import url('./components/modal-review.css');
+
 

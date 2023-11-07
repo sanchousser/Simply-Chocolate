@@ -1,0 +1,62 @@
+<div
+  class="subscribe__modal__backdrop is-hidden-subscribe"
+  id="subscribe-modal"
+>
+  <div class="subscribe__modal__first-container">
+    <div class="subscribe__modal__container">
+      <picture>
+        <source
+          srcset="
+            /img/subscribe-modal/chocolate-pop-up-desktop.jpg    1x,
+            /img/subscribe-modal/chocolate-pop-up-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/jpg"
+        />
+        <source
+          srcset="
+            /img/subscribe-modal/chocolate-pop-up-tablet.jpg    1x,
+            /img/subscribe-modal/chocolate-pop-up-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+          type="image/jpg"
+        />
+        <source
+          srcset="
+            /img/subscribe-modal/chocolate-pop-up-mobile.jpg    1x,
+            /img/subscribe-modal/chocolate-pop-up-mobile@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+          type="image/jpg"
+        />
+        <img
+          src="/img/pop-up/mobile/pop-up-mobile.jpg"
+          alt="chocolate"
+          class="subscribe__modal__img"
+        />
+      </picture>
+      <button class="subscribe__modal__btn__close">
+        <svg class="subscribe__modal__close__icon">
+          <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
+        </svg>
+      </button>
+      <h2 class="subscribe__modal__title">
+        Explore our <br /><span class="subscribe__span-title"
+          >New chocolate</span
+        >
+        first!
+      </h2>
+      <form class="subscribe__modal__form" id="subscribe__modal__form">
+        <input
+          type="text"
+          class="subscribe-modal__input"
+          placeholder="Enter your email"
+          name="subscribe__modal__name"
+          data-min-length="8"
+          data-max-length="30"
+        />
+        <button type="submit" class="subscribe__modal__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
