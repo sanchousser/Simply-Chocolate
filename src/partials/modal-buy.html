@@ -1,4 +1,4 @@
-<div class="buy-modal modal" data-modal="1">
+<div class="buy-modal modal" data-modal="1" id="js-buy-now-modal">
   <button class="modal__close-btn js-modal-close">
     <svg class="modal__close__icon">
       <use href="./img/icons/symbol-defs.svg#icon-x-mobile"></use>
@@ -60,7 +60,6 @@
           placeholder="Surname"
           type="text"
           class="modal__form__input input-js"
-          required
           pattern="\w{2,25}"
         />
       </div>
@@ -72,7 +71,6 @@
         type="email"
         class="modal__form__input input-js"
         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-        required
       />
     </label>
     <label class="modal__label">
@@ -88,7 +86,6 @@
           placeholder="Phone number"
           type="tel"
           class="modal__form__input input__phone input-js"
-          required
           pattern="\d{9,9}"
         />
       </div>
@@ -101,7 +98,6 @@
             placeholder="Enter card"
             type="number"
             class="modal__form__input input-js"
-            required
             pattern="\d{8,8}"
           />
           <svg class="card__icon">
@@ -118,15 +114,10 @@
         name="comment"
         cols="30"
         rows="10"
-        required
         class="modal__form__input__comment"
       ></textarea>
     </label>
-    <button
-      type="submit"
-      class="modal__button js-modal-close js-open-modal button-js"
-      data-modal="3"
-    >
+    <button type="submit" class="modal__button" id="js-thanks-buy-now-modal">
       Submit
     </button>
   </form>
